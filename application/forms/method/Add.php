@@ -1,11 +1,26 @@
 <?php
 
-class Application_Form_Methodsadd extends Zend_Form
+class Application_Form_Method_Add extends Zend_Form
 {
     public function init()
     {
         $this->setName('methodsAdd');
         $isEmptyMessage = 'Значение является обязательным и не может быть пустым';
+
+        $project = new Application_Model_DbTable_Projects();
+
+        $projectId = new Zend_Form_Element_Select('projectId');
+        $projectId
+            ->setLabel('Project:')
+            ->setRequired(true)
+            ->addFilter('StringTrim')
+            ->addMultiOptions($project->getSelect())
+            ->addValidator('NotEmpty', true,
+                array('messages' => array('isEmpty' => $isEmptyMessage))
+            );
+
+
+
         $name = new Zend_Form_Element_Text('name');
         $name->setLabel('Name:')
             ->setRequired(true)
@@ -31,8 +46,9 @@ class Application_Form_Methodsadd extends Zend_Form
             ->addValidator('NotEmpty', true,
                 array('messages' => array('isEmpty' => $isEmptyMessage))
             );
-        $parameters	 = new Zend_Form_Element_Textarea('parameters');
-        $parameters	->setLabel('Parameters:')
+        $success = new Zend_Form_Element_Textarea('success');
+        $success
+            ->setLabel('Success:')
             ->setRequired(true)
             ->addFilter('StripTags')
             ->addFilter('StringTrim')
@@ -40,8 +56,8 @@ class Application_Form_Methodsadd extends Zend_Form
                 array('messages' => array('isEmpty' => $isEmptyMessage))
             );
 
-        $data	 = new Zend_Form_Element_Textarea('data');
-        $data	->setLabel('Data:')
+        $data = new Zend_Form_Element_Textarea('data');
+        $data ->setLabel('Data:')
             ->setRequired(true)
             ->addFilter('StripTags')
             ->addFilter('StringTrim')
@@ -50,10 +66,10 @@ class Application_Form_Methodsadd extends Zend_Form
             );
 
         $submit = new Zend_Form_Element_Submit('add');
-        $submit->setLabel('Add');
+        $submit->setLabel('Add')->setAttrib('class','btn btn-primary');
 
 
-        $this->addElements(array($name,$short, $description,$parameters,$data, $submit));
+        $this->addElements(array($name,$projectId,$short, $description,$success,$data, $submit));
 
 
         $this->setMethod('post');

@@ -1,0 +1,23 @@
+<legend><?=$this->method['name'];?></legend>
+<ul class="breadcrumb">
+    <li><a href="/">Home</a> <span class="divider">/</span></li>
+    <li><a href="/">Methods</a> <span class="divider">/</span></li>
+    <li class="active"><?=$this->method['name'];?></li>
+</ul>
+
+<h4>Description</h4>
+<p class="text-info"><?=$this->method['short'];?></p>
+<div class="well"><?=$this->method['description'];?></div>
+<hr>
+<b class="text-success">SUCCESS</b>
+<div class="well"><?=$this->method['success'];?></div>
+<hr>
+<h4>Data</h4>
+<div class="well"><?=$this->method['data'];?></div>
+
+
+<hr>
+<ul class="nav nav-pills">
+    <li><a href="/method/error/methodId/<?=$this->method['id'];?>">Add error</a> </li>
+    <li class="disabled"><a href="#">Add parameters(In development)</a></li>
+</ul>

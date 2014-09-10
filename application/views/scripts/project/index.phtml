@@ -1,0 +1,19 @@
+<legend>Projects</legend>
+<table class="table table-hover">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th></th>
+        <th></th>
+    </tr>
+
+<?php
+    foreach($this->project as $project)
+    {
+        echo '<tr><td><a href="/method/index/project/'.$project['id'].'">'.$project['name'].'</a></td>';
+        echo '<td>'.$project['description'].'</td>';
+        echo '<td><a href="/project/edit/id/'.$project['id'].'"><i class="icon-pencil"></i></a></td>';
+        echo '<td><a href="/project/delete/id/'.$project['id'].'"><i class="icon-remove"></i></a></td></tr>';
+    }
+?>
+    </table>

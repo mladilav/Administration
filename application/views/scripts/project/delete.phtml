@@ -1,0 +1,15 @@
+<?php
+$this->title = "Delete project";
+$this->headTitle($this->title);
+?>
+    <p>Are you sure delete
+        '<?php echo $this->escape($this->project['name']); ?>'?
+    </p>
+
+<form action="<?php echo $this->url(array('action' => 'delete')); ?>" method="post">
+    <div>
+        <input type="hidden" name="id" value="<?php echo $this->project['id']; ?>"/>
+        <input type="submit" class="btn" name="del" value="Yes"/>
+        <input type="submit" class="btn btn-primary" name="del" value="No"/>
+    </div>
+</form>

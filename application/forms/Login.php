@@ -24,7 +24,7 @@ class Application_Form_Login extends Zend_Form
                 array('messages' => array('isEmpty' => $isEmptyMessage))
             );
         $submit = new Zend_Form_Element_Submit('login');
-        $submit->setLabel('Log in');
+        $submit->setLabel('Log in')->setAttrib('class','btn btn-primary');
         $this->addElements(array($username, $password, $submit));
         $this->setMethod('post');
     }

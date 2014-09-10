@@ -1,0 +1,15 @@
+<legend>Methods for project <span class="text-info"><?=$this->project['name']?></span></legend>
+<table class="table table-bordered table-hover table-condensed">
+    <tr>
+        <th>Resource</th>
+        <th>Description</th>
+    </tr>
+
+    <?php
+    foreach($this->methods as $methods)
+    {
+        echo '<tr><td><a href="/method/detail/id/'.$methods['id'].'">'.$methods['name'].'</a></td>';
+        echo '<td>'.$methods['short'].'</td></tr>';
+    }
+    ?>
+</table>
