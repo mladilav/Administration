@@ -1,0 +1,23 @@
+<legend>Request methods</legend>
+<table class="table table-bordered table-hover table-condensed">
+    <tr>
+        <th>User</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Status</th>
+    </tr>
+
+    <?php
+    foreach($this->request as $request)
+    {
+        echo '<tr><td>'.$request['username'].'</td>';
+        echo '<td>'.$request['description'].'</td>';
+
+        echo '<td>'.date("H:i:s d-m-Y",$request['date']).'</td>';
+        echo '<td>';
+        if($request['status']==0){ echo '<a href="/help/requeststatus/id/'.$request['id'].'"><i class="icon-exclamation-sign"></i></a>';}
+        else {echo '<i class="icon-ok"></i>';}
+        echo '</td></tr>';
+    }
+    ?>
+</table>

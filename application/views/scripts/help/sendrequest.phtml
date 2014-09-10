@@ -1,0 +1,10 @@
+<form method="POST" action="/help/sendrequest" >
+    <legend>Send request</legend>
+    <input type="text" name="url" placeholder="Please insert url without http:// ...">
+    <textarea name="body" placeholder="Please insert json string..."></textarea>
+    <input type="submit" class="btn btn-primary" value="Request">
+</form>
+<h4>Result</h4>
+<div class="well">
+<?php echo $this->data;?>
+    </div>

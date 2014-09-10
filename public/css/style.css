@@ -1,0 +1,25 @@
+body{
+    background-color: #f1f1f1;
+    font-family: Consolas;
+}
+
+.cont{
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #ddd;
+    padding: 10px;
+}
+input[type="text"],textarea{
+    width: 98%;
+}
+
+textarea{
+    resize: none;
+    height: 200px;
+}
+.nav, .navbar{
+    margin-bottom: 0px;
+}
+#login input[type="text"]{
+    width: 205px;
+}
