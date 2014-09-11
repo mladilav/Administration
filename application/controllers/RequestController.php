@@ -13,7 +13,7 @@ class RequestController extends Zend_Controller_Action
     public function indexAction()
     {
         if (!Zend_Auth::getInstance()->hasIdentity()) {
-            $this->_helper->redirector('login','help');
+            $this->_helper->redirector('login','user');
         }
         $Request = new Application_Model_DbTable_Request();
         $this->view->request = $Request->fetchAll($Request->select()->order('date DESC'));

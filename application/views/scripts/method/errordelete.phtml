@@ -1,0 +1,15 @@
+<?php
+$this->title = "Delete error";
+$this->headTitle($this->title);
+?>
+<p>Are you sure error
+    '<?php echo $this->escape($this->error['name']); ?>'?
+</p>
+
+<form action="<?php echo $this->url(array('action' => 'delete')); ?>" method="post">
+    <div>
+        <input type="hidden" name="id" value="<?php echo $this->error['id']; ?>"/>
+        <input type="submit" class="btn" name="del" value="Yes"/>
+        <input type="submit" class="btn btn-primary" name="del" value="No"/>
+    </div>
+</form>

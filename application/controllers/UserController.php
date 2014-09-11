@@ -13,7 +13,7 @@ class UserController extends Zend_Controller_Action
     public function indexAction()
     {
         if (!Zend_Auth::getInstance()->hasIdentity()) {
-            $this->_helper->redirector('login','help');
+            $this->_helper->redirector('login','user');
         }
     }
 
@@ -60,6 +60,25 @@ class UserController extends Zend_Controller_Action
     {
         Zend_Auth::getInstance()->clearIdentity();
         $this->_helper->redirector('index', 'help');
+    }
+
+    public function registrationAction()
+    {
+        if ($this->getRequest()->isPost()) {
+            $data = array(
+                'username' => $this->getRequest()->getPost('username'),
+                'firstName' => $this->getRequest()->getPost('firstName'),
+                'lastName' => $this->getRequest()->getPost('lastName'),
+                'email' => $this->getRequest()->getPost('email'),
+                'password' => $this->getRequest()->getPost('password'),
+                'avatar' => $this->getRequest()->getPost('avatar'),
+                'dateRegistration' => time(),
+                'dateLogin' => time(),
+            );
+           // $user = new Application_D
+
+        }
+
     }
 
 

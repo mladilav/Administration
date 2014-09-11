@@ -20,6 +20,14 @@ textarea{
 .nav, .navbar{
     margin-bottom: 0px;
 }
-#login input[type="text"]{
+#login input[type="text"],#registration input[type="text"]{
     width: 205px;
+}
+a.text-warning{
+ color: orange!important;
+}
+#registration img{
+    position: absolute;
+    top: 100px;
+    right: 100px;
 }

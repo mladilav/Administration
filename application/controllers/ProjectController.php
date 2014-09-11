@@ -73,6 +73,8 @@ class ProjectController extends Zend_Controller_Action
                 $id = $this->getRequest()->getPost('id');
                 $project = new Application_Model_DbTable_Projects();
                 $project->deleteProjects($id);
+                $method = new Application_Model_DbTable_Methods();
+                $method->deleteByProjectMethods($id);
             }
 
             $this->_helper->redirector('index','project');

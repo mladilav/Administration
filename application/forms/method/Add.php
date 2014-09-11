@@ -7,6 +7,7 @@ class Application_Form_Method_Add extends Zend_Form
         $this->setName('methodsAdd');
         $isEmptyMessage = 'Значение является обязательным и не может быть пустым';
 
+        $id = new Zend_Form_Element_Hidden('id');
         $project = new Application_Model_DbTable_Projects();
 
         $projectId = new Zend_Form_Element_Select('projectId');
@@ -69,7 +70,7 @@ class Application_Form_Method_Add extends Zend_Form
         $submit->setLabel('Add')->setAttrib('class','btn btn-primary');
 
 
-        $this->addElements(array($name,$projectId,$short, $description,$success,$data, $submit));
+        $this->addElements(array($id,$name,$projectId,$short, $description,$success,$data, $submit));
 
 
         $this->setMethod('post');

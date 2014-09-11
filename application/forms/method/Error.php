@@ -39,8 +39,8 @@ class Application_Form_Method_Error extends Zend_Form
         $submit = new Zend_Form_Element_Submit('add');
         $submit->setLabel('Add')->setAttrib('class','btn btn-primary');
 
-
-        $this->addElements(array($name, $description,$body, $submit));
+        $id = new Zend_Form_Element_Hidden('id');
+        $this->addElements(array($name,$id, $description,$body, $submit));
 
 
         $this->setMethod('post');

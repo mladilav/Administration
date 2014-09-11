@@ -13,7 +13,7 @@ class HelpController extends Zend_Controller_Action
     public function indexAction()
     {
         if (!Zend_Auth::getInstance()->hasIdentity()) {
-            $this->_helper->redirector('login','help');
+            $this->_helper->redirector('login','user');
         }
     }
 

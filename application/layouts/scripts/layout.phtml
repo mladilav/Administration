@@ -49,9 +49,9 @@ date_default_timezone_set('Europe/Kiev');
                         if (Zend_Auth::getInstance()->hasIdentity()) {
                         $url = $this->url(array('controller'=>'user', 'action'=>'logout'));
 	                     // если пользователь авторизирован, показываем ему кнопку "Выход"
-	                    echo "<li><a href=\"{$url}\">Exit</a></li>";}
-
-	?>
+	                    echo "<li><a href=\"{$url}\">Exit</a></li>";} else {?>
+                        <li><a href="#registration"class="text-warning" role="button" class="text-warning" data-toggle="modal">Registration</a></li>
+                        <?php }?>
 
                     </ul>
                 </div>
@@ -74,6 +74,32 @@ date_default_timezone_set('Europe/Kiev');
         </div>
     </div>
 </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal hide " id="registration" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+        <form method="post" action="/user/registration" name="registration">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">Registration</h3>
+        </div>
+        <div class="modal-body">
+            <img align="right" src="/img/preferences-contact-list.png">
+            <p><input type="text" placeholder="Username..." required="true" name="username"></p>
+            <p><input type="text" placeholder="First name..." required="true" name="firstName"></p>
+            <p><input type="text" placeholder="Last name..." required="true" name="lastName"></p>
+            <p><input type="email" placeholder="Email..." required="true" name="email"></p>
+            <p><input type="password" placeholder="Password..." required="true" name="password"></p>
+            <p><input type="password" placeholder="Repeat password..." required="true" name="passwordRepeat"></p>
+            <p><input type="text" placeholder="Avatar..." name="avatar"></p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+            <button class="btn btn-primary">Registration</button>
+        </div>
+        </form>
+    </div>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 </body>

@@ -1,12 +1,11 @@
 <?php
 
-class Application_Model_DbTable_Methods extends Zend_Db_Table_Abstract
+class Application_Model_DbTable_User extends Zend_Db_Table_Abstract
 {
 
-    protected $_name = 'methods';
-    public function getMethods($id)
+    protected $_name = 'users';
+    public function getUser($id)
     {
-
         $id = (int)$id;
         $row = $this->fetchRow('id = ' . $id);
         if(!$row) {
@@ -15,22 +14,19 @@ class Application_Model_DbTable_Methods extends Zend_Db_Table_Abstract
         return $row->toArray();
     }
 
-    public function addMethods($data)
+    public function addUser($data)
     {
+
         $this->insert($data);
     }
 
-    public  function updateMethods($data)
+    public  function updateUser($data)
     {
         $this->update($data, 'id = ' . (int)$data['id']);
     }
 
-    public function deleteMethods($id)
+    public function deleteUser($id)
     {
         $this->delete('id = ' . (int)$id);
-    }
-    public function deleteByProjectMethods($id)
-    {
-        $this->delete('projectId = ' . (int)$id);
     }
 }

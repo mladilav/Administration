@@ -15,6 +15,18 @@ class Application_Model_DbTable_Methoderror extends Zend_Db_Table_Abstract
         return $row->toArray();
     }
 
+    public function getByMethodId($id)
+    {
+
+        $id = (int)$id;
+        $row = $this->fetchAll('methodId = ' . $id);
+        if(!$row) {
+            throw new Exception("Нет записи с methodId - $id");
+        }
+        return $row;
+    }
+
+
     public function addMethoderror($data)
     {
         $this->insert($data);
@@ -28,5 +40,9 @@ class Application_Model_DbTable_Methoderror extends Zend_Db_Table_Abstract
     public function deleteMethoderror($id)
     {
         $this->delete('id = ' . (int)$id);
+    }
+    public function deleteByMethodMethoderror($id)
+    {
+        $this->delete('methodId = ' . (int)$id);
     }
 }
