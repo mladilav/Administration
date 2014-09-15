@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c9704ea-0163-4a88-8ad9-268d7bce9b00" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/IndexController.php" afterPath="$PROJECT_DIR$/application/controllers/IndexController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/UserController.php" afterPath="$PROJECT_DIR$/application/controllers/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/index.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
     </list>
     <ignored path="administration.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +28,7 @@
       <file leaf-file-name="ProjectController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/ProjectController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="52" selection-start="154" selection-end="259" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="2227">
+            <state line="32" column="75" selection-start="952" selection-end="995" vertical-scroll-proportion="-9.153846" vertical-offset="306" max-vertical-offset="2227">
               <folding />
             </state>
           </provider>
@@ -45,21 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.phtml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
+      <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="17" selection-start="953" selection-end="953" vertical-scroll-proportion="0.7308411" vertical-offset="0" max-vertical-offset="535">
-              <folding>
-                <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="52" column="46" selection-start="1740" selection-end="1740" vertical-scroll-proportion="-26.153847" vertical-offset="204" max-vertical-offset="1785">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/UserController.php">
+      <file leaf-file-name="layout.phtml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/layouts/scripts/layout.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="62" selection-start="1578" selection-end="1578" vertical-scroll-proportion="-17.384615" vertical-offset="398" max-vertical-offset="1734">
+            <state line="53" column="33" selection-start="2824" selection-end="2824" vertical-scroll-proportion="1.7260536" vertical-offset="0" max-vertical-offset="2414">
               <folding />
             </state>
           </provider>
@@ -135,9 +131,9 @@
         <option value="$PROJECT_DIR$/application/views/change/index.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/change/index.phtml" />
         <option value="$PROJECT_DIR$/application/controllers/ChangeController.php" />
-        <option value="$PROJECT_DIR$/application/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
+        <option value="$PROJECT_DIR$/application/controllers/UserController.php" />
       </list>
     </option>
   </component>
@@ -622,7 +618,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -869,11 +865,6 @@
         <state line="9" column="103" selection-start="854" selection-end="854" vertical-scroll-proportion="0.2859813" vertical-offset="0" max-vertical-offset="535" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/layouts/scripts/layout.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="33" selection-start="2824" selection-end="2824" vertical-scroll-proportion="0.20689656" vertical-offset="793" max-vertical-offset="2414" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/forms/method/Error.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="38" selection-start="1413" selection-end="1413" vertical-scroll-proportion="-13.730769" vertical-offset="357" max-vertical-offset="918" />
@@ -907,13 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="62" selection-start="1578" selection-end="1578" vertical-scroll-proportion="-17.384615" vertical-offset="398" max-vertical-offset="1734">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/ChangeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="87" selection-start="337" selection-end="337" vertical-scroll-proportion="0.37988827" vertical-offset="0" max-vertical-offset="537">
@@ -921,9 +905,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="17" selection-start="953" selection-end="953" vertical-scroll-proportion="0.7308411" vertical-offset="0" max-vertical-offset="535">
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/ProjectController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="52" selection-start="154" selection-end="259" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="2227">
+        <state line="32" column="75" selection-start="952" selection-end="995" vertical-scroll-proportion="-9.153846" vertical-offset="306" max-vertical-offset="2227">
           <folding />
         </state>
       </provider>
@@ -935,12 +928,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
+    <entry file="file://$PROJECT_DIR$/application/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="17" selection-start="953" selection-end="953" vertical-scroll-proportion="0.7308411" vertical-offset="0" max-vertical-offset="535">
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="52" column="46" selection-start="1740" selection-end="1740" vertical-scroll-proportion="-26.153847" vertical-offset="204" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/layouts/scripts/layout.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="33" selection-start="2824" selection-end="2824" vertical-scroll-proportion="1.7260536" vertical-offset="0" max-vertical-offset="2414">
+          <folding />
         </state>
       </provider>
     </entry>
