@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c9704ea-0163-4a88-8ad9-268d7bce9b00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/ChangeController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/DbTable/Changes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/scripts/change/index.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery-2.1.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/scripts/user/profile.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/scripts/user/registration.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/HelpController.php" afterPath="$PROJECT_DIR$/application/controllers/HelpController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/MethodController.php" afterPath="$PROJECT_DIR$/application/controllers/MethodController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/ProjectController.php" afterPath="$PROJECT_DIR$/application/controllers/ProjectController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/RequestController.php" afterPath="$PROJECT_DIR$/application/controllers/RequestController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/DbTable/User.php" afterPath="$PROJECT_DIR$/application/models/DbTable/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/IndexController.php" afterPath="$PROJECT_DIR$/application/controllers/IndexController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/UserController.php" afterPath="$PROJECT_DIR$/application/controllers/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/method/errordelete.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/method/errordelete.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/help/index.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/help/index.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/index.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/user/index.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/user/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/layouts/scripts/layout.phtml" afterPath="$PROJECT_DIR$/application/layouts/scripts/layout.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="administration.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,46 +27,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MethodController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/MethodController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="240" column="44" selection-start="9100" selection-end="9583" vertical-scroll-proportion="-7.0" vertical-offset="3723" max-vertical-offset="4811">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProjectController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/ProjectController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="30" selection-start="3792" selection-end="3792" vertical-scroll-proportion="-2.6666667" vertical-offset="1649" max-vertical-offset="2227">
+            <state line="13" column="52" selection-start="154" selection-end="259" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="2227">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="50" selection-start="425" selection-end="425" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="476">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="43" selection-start="307" selection-end="307" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="408">
-              <folding />
+            <state line="23" column="17" selection-start="953" selection-end="953" vertical-scroll-proportion="0.7308411" vertical-offset="0" max-vertical-offset="535">
+              <folding>
+                <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/RequestController.php">
+      <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="73" selection-start="2413" selection-end="2413" vertical-scroll-proportion="-9.153846" vertical-offset="918" max-vertical-offset="1853">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChangeController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/controllers/ChangeController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0317757" vertical-offset="0" max-vertical-offset="535">
+            <state line="50" column="62" selection-start="1578" selection-end="1578" vertical-scroll-proportion="-17.384615" vertical-offset="398" max-vertical-offset="1734">
               <folding />
             </state>
           </provider>
@@ -92,7 +68,7 @@
       <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/change/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="34" selection-start="64" selection-end="64" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="578">
+            <state line="1" column="34" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="578">
               <folding />
             </state>
           </provider>
@@ -129,7 +105,6 @@
         <option value="$PROJECT_DIR$/application/forms/Methoderror.php" />
         <option value="$PROJECT_DIR$/application/forms/methods/Add.php" />
         <option value="$PROJECT_DIR$/application/models/DbTable/Methoderrors.php" />
-        <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/user/login.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/method/edit.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/method/index.phtml" />
@@ -147,7 +122,6 @@
         <option value="$PROJECT_DIR$/public/js/script.js" />
         <option value="$PROJECT_DIR$/application/views/scripts/user/registration.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/user/index.phtml" />
-        <option value="$PROJECT_DIR$/application/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/user/profile.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/method/errordelete.phtml" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
@@ -160,8 +134,10 @@
         <option value="$PROJECT_DIR$/application/controllers/RequestController.php" />
         <option value="$PROJECT_DIR$/application/views/change/index.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/change/index.phtml" />
-        <option value="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
         <option value="$PROJECT_DIR$/application/controllers/ChangeController.php" />
+        <option value="$PROJECT_DIR$/application/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
       </list>
     </option>
   </component>
@@ -198,7 +174,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -587,6 +562,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -655,7 +631,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27190334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27567977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -839,16 +815,9 @@
         <state line="2" column="6" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0635514" vertical-offset="0" max-vertical-offset="782" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="40" selection-start="2138" selection-end="2138" vertical-scroll-proportion="0.26915887" vertical-offset="1029" max-vertical-offset="1734" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/user/profile.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="6" selection-start="527" selection-end="527" vertical-scroll-proportion="0.3244275" vertical-offset="0" max-vertical-offset="524">
-          <folding />
-        </state>
+        <state line="10" column="6" selection-start="527" selection-end="527" vertical-scroll-proportion="0.3244275" vertical-offset="0" max-vertical-offset="524" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/method/errordelete.phtml">
@@ -860,23 +829,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/method/detail.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="36" selection-start="750" selection-end="750" vertical-scroll-proportion="0.44692737" vertical-offset="66" max-vertical-offset="629">
-          <folding />
-        </state>
+        <state line="18" column="36" selection-start="750" selection-end="750" vertical-scroll-proportion="0.44692737" vertical-offset="66" max-vertical-offset="629" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/DbTable/Methoderror.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="20" selection-start="837" selection-end="837" vertical-scroll-proportion="0.5251397" vertical-offset="381" max-vertical-offset="918">
-          <folding />
-        </state>
+        <state line="39" column="20" selection-start="837" selection-end="837" vertical-scroll-proportion="0.5251397" vertical-offset="381" max-vertical-offset="918" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/user/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="92" selection-start="377" selection-end="377" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
+        <state line="12" column="92" selection-start="377" selection-end="377" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="391" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
@@ -888,51 +851,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/DbTable/Methods.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="20" selection-start="0" selection-end="756" vertical-scroll-proportion="1.0252918" vertical-offset="0" max-vertical-offset="714">
-          <folding />
-        </state>
+        <state line="31" column="20" selection-start="0" selection-end="756" vertical-scroll-proportion="1.0252918" vertical-offset="0" max-vertical-offset="714" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/DbTable/Errors.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="20" selection-start="133" selection-end="133" vertical-scroll-proportion="0.19844358" vertical-offset="0" max-vertical-offset="646">
-          <folding />
-        </state>
+        <state line="6" column="20" selection-start="133" selection-end="133" vertical-scroll-proportion="0.19844358" vertical-offset="0" max-vertical-offset="646" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/DbTable/Changes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="644" selection-end="644" vertical-scroll-proportion="0.98504674" vertical-offset="0" max-vertical-offset="663">
-          <folding />
-        </state>
+        <state line="31" column="0" selection-start="644" selection-end="644" vertical-scroll-proportion="0.98504674" vertical-offset="0" max-vertical-offset="663" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/help/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="103" selection-start="854" selection-end="854" vertical-scroll-proportion="0.2859813" vertical-offset="0" max-vertical-offset="535">
-          <folding />
-        </state>
+        <state line="9" column="103" selection-start="854" selection-end="854" vertical-scroll-proportion="0.2859813" vertical-offset="0" max-vertical-offset="535" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/layouts/scripts/layout.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="33" selection-start="2824" selection-end="2824" vertical-scroll-proportion="0.20689656" vertical-offset="793" max-vertical-offset="2414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="52" selection-start="0" selection-end="323" vertical-scroll-proportion="0.41308412" vertical-offset="0" max-vertical-offset="535">
-          <folding />
-        </state>
+        <state line="53" column="33" selection-start="2824" selection-end="2824" vertical-scroll-proportion="0.20689656" vertical-offset="793" max-vertical-offset="2414" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/forms/method/Error.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="38" selection-start="1413" selection-end="1413" vertical-scroll-proportion="-13.730769" vertical-offset="357" max-vertical-offset="918">
-          <folding />
-        </state>
+        <state line="42" column="38" selection-start="1413" selection-end="1413" vertical-scroll-proportion="-13.730769" vertical-offset="357" max-vertical-offset="918" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/HelpController.php">
@@ -944,43 +888,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/change/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="34" selection-start="64" selection-end="64" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="43" selection-start="307" selection-end="307" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/ProjectController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="30" selection-start="3792" selection-end="3792" vertical-scroll-proportion="-2.6666667" vertical-offset="1649" max-vertical-offset="2227">
+        <state line="1" column="34" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="578">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/MethodController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="240" column="44" selection-start="9100" selection-end="9583" vertical-scroll-proportion="-7.0" vertical-offset="3723" max-vertical-offset="4811">
+        <state line="240" column="44" selection-start="9100" selection-end="9583" vertical-scroll-proportion="0.0" vertical-offset="3723" max-vertical-offset="4811">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/RequestController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="73" selection-start="2413" selection-end="2413" vertical-scroll-proportion="-9.153846" vertical-offset="918" max-vertical-offset="1853">
+        <state line="68" column="73" selection-start="2413" selection-end="2413" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1853">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="62" selection-start="1578" selection-end="1578" vertical-scroll-proportion="-17.384615" vertical-offset="398" max-vertical-offset="1734">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/ChangeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0317757" vertical-offset="0" max-vertical-offset="535">
+        <state line="12" column="87" selection-start="337" selection-end="337" vertical-scroll-proportion="0.37988827" vertical-offset="0" max-vertical-offset="537">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/ProjectController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="52" selection-start="154" selection-end="259" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="2227">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="50" selection-start="425" selection-end="425" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="17" selection-start="953" selection-end="953" vertical-scroll-proportion="0.7308411" vertical-offset="0" max-vertical-offset="535">
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

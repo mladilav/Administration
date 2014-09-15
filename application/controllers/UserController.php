@@ -48,7 +48,7 @@ class UserController extends Zend_Controller_Action
                     $identity = $authAdapter->getResultRowObject();
                     $authStorage = $auth->getStorage();
                     $authStorage->write($identity);
-                    $this->_helper->redirector('index', 'help');
+                    $this->_helper->redirector('index', 'index');
                 } else {
                     $this->view->errMessage = 'Authorization error. Please check login or/and password';
                 }

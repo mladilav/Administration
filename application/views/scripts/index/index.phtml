@@ -16,4 +16,11 @@
     </ol>
         </div>
 <hr>
+    <div class="well pull-left" style="min-width: 340px; margin: 5px; padding: 8px 0;">
+    <ul class="nav nav-list">
+        <li class="nav-header">Our project</li>
+        <?php foreach ($this->project as $project){ ?>
+        <li ><a href="/method/index/project/<?=$project['id']?>"><?=$project['name']?></a></li>
+        <?php }?>
+    </ul></div>
 </div>
