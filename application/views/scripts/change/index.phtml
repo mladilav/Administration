@@ -1,0 +1,29 @@
+<legend>Last changes</legend>
+<table class="table table-bordered">
+    <tr>
+        <th>Username</th>
+        <th>Description</th>
+        <th>Date</th>
+    </tr>
+<?php foreach($this->change as $change) {?>
+    <tr>
+        <td><a href="/user/profile/id/<?=$change['userId'];?>"><?=$change['username']?></a></td>
+        <td>
+            <span class="
+                <?php if($change['type']=='Add')
+                        {echo 'text-success';}
+                      if($change['type']=='Change')
+                        {echo 'text-warning';}
+                        if($change['type']=='Delete')
+                        {echo 'text-error';} ?>
+            ">
+                <?=$change['body'];?>
+            </span>
+
+        </td>
+        <td>
+            <?=date("H:i d.m.Y",$change['date']);?>
+        </td>
+        </tr>
+<?php } ?>
+</table>

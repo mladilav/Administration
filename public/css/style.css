@@ -6,8 +6,9 @@ body{
 .cont{
     background-color: #ffffff;
     border-radius: 5px;
-    box-shadow: 0 0 2px #ddd;
+    box-shadow: 0 3px 3px #999;
     padding: 10px;
+    margin-top: 50px;
 }
 input[type="text"],textarea{
     width: 98%;
@@ -30,4 +31,63 @@ a.text-warning{
     position: absolute;
     top: 100px;
     right: 100px;
+}
+
+.login-form{
+    float: right;
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 0 0;
+}
+.login-form input{
+    float: left;
+    width: 100px;
+    margin: 5px 5px 0 0;
+}
+
+.login-form input[type="text"],.login-form input[type="password"]{
+    color: #FFF;
+    background-color: #515151;
+    border-color: #111;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset, 0px 1px 0px rgba(255, 255, 255, 0.15);
+    transition: none 0s ease 0s;
+}
+.login-form input[type="text"]:focus,.login-form input[type="password"]:focus,
+.login-form input[type="text"]:active,.login-form input[type="password"]:active{
+    padding: 5px 15px;
+    color: #333;
+    text-shadow: 0px 1px 0px #FFF;
+    background-color: #FFF;
+    border: 0px none;
+    outline: 0px none;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+}
+
+.login-form input[type="submit"]{
+    width:auto;
+}
+.main-page .warning img, .main-page .info img{
+    padding-right: 10px;
+    border-right:1px dashed #ddd;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.main-page .info{
+    display: inline-block;
+}
+.main-page .info ol{
+    margin-left: 50px;
+}
+
+.profile .avatar{
+    background: none repeat scroll 0 0 #ddd;
+    border-radius: 10px;
+    box-shadow: 3px 2px 5px  #5a5a5a inset;
+    border:1px solid #ffffff;
+    padding: 10px;
+    margin-right: 40px;
+}
+.user{
+    padding: 10px;
+    color: #999;
 }

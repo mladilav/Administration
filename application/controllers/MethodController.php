@@ -46,6 +46,20 @@ class MethodController extends Zend_Controller_Action
 
                 $methods = new Application_Model_DbTable_Methods();
                 $methods->addMethods($data);
+
+                $projects = new Application_Model_DbTable_Projects();
+                $proj = $projects->getProjects($form->getValue('projectId'));
+                $change = new Application_Model_DbTable_Changes();
+                $array = array(
+                    'userId' => Zend_Auth::getInstance()->getIdentity()->id,
+                    'username' => Zend_Auth::getInstance()->getIdentity()->username,
+                    'date' => time(),
+                    'type' => 'Add',
+                    'body' => 'Added method - '.$form->getValue('name').' in project '.$proj['name']
+                );
+                $change->addChanges($array);
+
+
                 $this->_helper->redirector('add', 'method');
 
             } else {
@@ -75,6 +89,19 @@ class MethodController extends Zend_Controller_Action
 
                 $methods = new Application_Model_DbTable_Methods();
                 $methods->updateMethods($data);
+
+                $projects = new Application_Model_DbTable_Projects();
+                $proj = $projects->getProjects($form->getValue('projectId'));
+                $change = new Application_Model_DbTable_Changes();
+                $array = array(
+                    'userId' => Zend_Auth::getInstance()->getIdentity()->id,
+                    'username' => Zend_Auth::getInstance()->getIdentity()->username,
+                    'date' => time(),
+                    'type' => 'Change',
+                    'body' => 'Changed method - '.$form->getValue('name').' in project '.$proj['name']
+                );
+                $change->addChanges($array);
+
                 $this->_helper->redirector('add', 'method');
 
             } else {
@@ -120,6 +147,20 @@ class MethodController extends Zend_Controller_Action
 
                     $methods = new Application_Model_DbTable_Methoderror();
                     $methods->addMethoderror($data);
+
+                    $methods = new Application_Model_DbTable_Methods();
+                    $method = $methods->getMethods($methodId);
+
+                    $change = new Application_Model_DbTable_Changes();
+                    $array = array(
+                        'userId' => Zend_Auth::getInstance()->getIdentity()->id,
+                        'username' => Zend_Auth::getInstance()->getIdentity()->username,
+                        'date' => time(),
+                        'type' => 'Add',
+                        'body' => 'Added description of error in method - <a href="/method/detail/id/'.$method['id'].'">'
+                            .$method['name'].'</a>.'
+                    );
+                    $change->addChanges($array);
                     echo '<div class="alert alert-success">SUCCESS</div>';
 
                 } else {
@@ -146,6 +187,23 @@ class MethodController extends Zend_Controller_Action
 
                     $methods = new Application_Model_DbTable_Methoderror();
                     $methods->updateMethoderror($data);
+
+                    $error = $methods->getMethoderror($form->getValue('id'));
+                    $methodss = new Application_Model_DbTable_Methods();
+                    $method = $methodss->getMethods($error['methodId']);
+
+                    $change = new Application_Model_DbTable_Changes();
+                    $array = array(
+                        'userId' => Zend_Auth::getInstance()->getIdentity()->id,
+                        'username' => Zend_Auth::getInstance()->getIdentity()->username,
+                        'date' => time(),
+                        'type' => 'Change',
+                        'body' => 'Changed description of error '.$form->getValue('name').
+                            ' in method - <a href="/method/detail/id/'.$method['id'].'">'
+                            .$method['name'].'</a>.'
+                    );
+                    $change->addChanges($array);
+
                     echo '<div class="alert alert-success">SUCCESS</div>';
 
                 } else {
@@ -165,8 +223,24 @@ class MethodController extends Zend_Controller_Action
             $del = $this->getRequest()->getPost('del');
             if ($del == 'Yes') {
                 $id = $this->getRequest()->getPost('id');
-                $method = new Application_Model_DbTable_Methods();
-                $method->deleteMethods($id);
+                $methods = new Application_Model_DbTable_Methods();
+
+                $method = $methods->getMethods($id);
+                $projects = new Application_Model_DbTable_Projects();
+                $proj = $projects->getProjects($method['projectId']);
+
+
+                $change = new Application_Model_DbTable_Changes();
+                $array = array(
+                    'userId' => Zend_Auth::getInstance()->getIdentity()->id,
+                    'username' => Zend_Auth::getInstance()->getIdentity()->username,
+                    'date' => time(),
+                    'type' => 'Delete',
+                    'body' => 'Deleted method - '.$method['name'].' in project '.$proj['name']
+                );
+                $change->addChanges($array);
+
+                $methods->deleteMethods($id);
             }
 
             $this->_helper->redirector('index','project');

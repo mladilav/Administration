@@ -6,7 +6,7 @@ $this->headTitle($this->title);
     '<?php echo $this->escape($this->error['name']); ?>'?
 </p>
 
-<form action="<?php echo $this->url(array('action' => 'delete')); ?>" method="post">
+<form action="<?php echo $this->url(array('action' => 'errordelete')); ?>" method="post">
     <div>
         <input type="hidden" name="id" value="<?php echo $this->error['id']; ?>"/>
         <input type="submit" class="btn" name="del" value="Yes"/>

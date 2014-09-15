@@ -12,9 +12,9 @@ class UserController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        if (!Zend_Auth::getInstance()->hasIdentity()) {
-            $this->_helper->redirector('login','user');
-        }
+        $user = new Application_Model_DbTable_User();
+        $this->view->users = $user->fetchAll();
+
     }
 
     public function loginAction()
@@ -33,7 +33,7 @@ class UserController extends Zend_Controller_Action
 
             if ($form->isValid($formData)) {
                 $authAdapter = new Zend_Auth_Adapter_DbTable(Zend_Db_Table::getDefaultAdapter());
-                $authAdapter->setTableName('admin')
+                $authAdapter->setTableName('users')
                     ->setIdentityColumn('username')
                     ->setCredentialColumn('password');
 
@@ -65,24 +65,32 @@ class UserController extends Zend_Controller_Action
     public function registrationAction()
     {
         if ($this->getRequest()->isPost()) {
+            $avatar = $this->getRequest()->getPost('avatar');
+            if(empty($avatar)){
+                $avatar = '/img/user.png';
+            }
             $data = array(
                 'username' => $this->getRequest()->getPost('username'),
                 'firstName' => $this->getRequest()->getPost('firstName'),
                 'lastName' => $this->getRequest()->getPost('lastName'),
                 'email' => $this->getRequest()->getPost('email'),
                 'password' => $this->getRequest()->getPost('password'),
-                'avatar' => $this->getRequest()->getPost('avatar'),
+                'avatar' => $avatar,
                 'dateRegistration' => time(),
                 'dateLogin' => time(),
+                'role' => 'guest',
             );
-           // $user = new Application_D
-
+            $user = new Application_Model_DbTable_User();
+            $this->view->result =  $user->addUser($data);
         }
-
     }
 
-
-
-
+    public function profileAction(){
+        $id = $this->_getParam('id');
+        if($id > 0){
+            $user = new Application_Model_DbTable_User();
+            $this->view->user = $user->getUser($id);
+        }
+    }
 }
 

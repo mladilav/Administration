@@ -32,6 +32,17 @@ class HelpController extends Zend_Controller_Action
                 );
                 $Errors = new Application_Model_DbTable_Errors();
                 $Errors->addErrors($data);
+
+                $change = new Application_Model_DbTable_Changes();
+                $array = array(
+                    'userId' => Zend_Auth::getInstance()->getIdentity()->id,
+                    'username' => Zend_Auth::getInstance()->getIdentity()->username,
+                    'date' => time(),
+                    'type' => 'Add',
+                    'body' => 'Added reports of error.'
+                );
+                $change->addChanges($array);
+
                 $this->_helper->redirector('index', 'help');
 
             } else {
@@ -47,6 +58,18 @@ class HelpController extends Zend_Controller_Action
             $Errors = new Application_Model_DbTable_Errors();
             $data = array('id' => $id,'status' => '1');
             $Errors->updateErrors($data);
+            $err = $Errors->getErrors($id);
+
+            $change = new Application_Model_DbTable_Changes();
+            $array = array(
+                'userId' => Zend_Auth::getInstance()->getIdentity()->id,
+                'username' => Zend_Auth::getInstance()->getIdentity()->username,
+                'date' => time(),
+                'type' => 'Change',
+                'body' => 'Changed status error. '.$err['description']
+            );
+            $change->addChanges($array);
+
             $this->_helper->redirector('errorall', 'help');
         }
     }

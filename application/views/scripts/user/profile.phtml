@@ -1,0 +1,11 @@
+<div class="profile">
+<legend><?=$this->user['username']?><small class="muted pull-right"><?=date("H:i d.m.Y",$this->user['dateLogin']);?></small> </legend>
+<img src="<?=$this->user['avatar']?>" align="left" class="avatar">
+    <ul>
+
+        <li>Name - <?=$this->user['firstName']?> <?=$this->user['lastName']?></li>
+        <li>E-mail - <?=$this->user['email']?></li>
+        <li>Role - <?=$this->user['role']?></li>
+        <li>Date registration - <?=date("H:i d.m.Y",$this->user['dateRegistration']);?></li>
+    </ul>
+</div>

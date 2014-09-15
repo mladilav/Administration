@@ -16,8 +16,16 @@ class Application_Model_DbTable_User extends Zend_Db_Table_Abstract
 
     public function addUser($data)
     {
-
+        $row = $this->fetchAll("username = '".$data['username']."'");
+        if($row->count() > 0){
+            return 'User with this username is already registered!';
+        }
+        $row = $this->fetchAll("email = '".$data['email']."'");
+        if($row->count() > 0){
+            return 'User with this E-mail is already registered!';
+        }
         $this->insert($data);
+        return 'Registration was successful!';
     }
 
     public  function updateUser($data)

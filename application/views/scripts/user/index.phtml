@@ -1,0 +1,18 @@
+<legend>List of users</legend>
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Name</th>
+        <th>E-mail</th>
+    </tr>
+<?php
+    foreach($this->users as $user){
+        echo '<tr>
+                    <td>'.$user['id'].'</td>
+                    <td><a href="/user/profile/id/'.$user['id'].'">'.$user['username'].'</a></td>
+                    <td>'.$user['firstName'].' '.$user['lastName'].'</td>
+                    <td>'.$user['email'].'</td></tr>';
+    }
+?>
+</table>

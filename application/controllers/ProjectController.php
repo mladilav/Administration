@@ -27,6 +27,17 @@ class ProjectController extends Zend_Controller_Action
                 );
                 $project = new Application_Model_DbTable_Projects();
                 $project->addProjects($data);
+
+                $change = new Application_Model_DbTable_Changes();
+                $array = array(
+                    'userId' => Zend_Auth::getInstance()->getIdentity()->id,
+                    'username' => Zend_Auth::getInstance()->getIdentity()->username,
+                    'date' => time(),
+                    'type' => 'Add',
+                    'body' => 'Added project - '.$form->getValue('name')
+                );
+                $change->addChanges($array);
+
                 $this->_helper->redirector('add', 'project');
 
             } else {
@@ -52,6 +63,17 @@ class ProjectController extends Zend_Controller_Action
                 );
                 $project = new Application_Model_DbTable_Projects();
                 $project->updateProjects($data);
+
+                $change = new Application_Model_DbTable_Changes();
+                $array = array(
+                    'userId' => Zend_Auth::getInstance()->getIdentity()->id,
+                    'username' => Zend_Auth::getInstance()->getIdentity()->username,
+                    'date' => time(),
+                    'type' => 'Change',
+                    'body' => 'Changed project - '.$form->getValue('name')
+                );
+                $change->addChanges($array);
+
                 $this->_helper->redirector('index','project');
 
             } else {
@@ -72,9 +94,20 @@ class ProjectController extends Zend_Controller_Action
             if ($del == 'Yes') {
                 $id = $this->getRequest()->getPost('id');
                 $project = new Application_Model_DbTable_Projects();
+                $proj = $project->getProjects($id);
                 $project->deleteProjects($id);
                 $method = new Application_Model_DbTable_Methods();
                 $method->deleteByProjectMethods($id);
+
+                $change = new Application_Model_DbTable_Changes();
+                $array = array(
+                    'userId' => Zend_Auth::getInstance()->getIdentity()->id,
+                    'username' => Zend_Auth::getInstance()->getIdentity()->username,
+                    'date' => time(),
+                    'type' => 'Delete',
+                    'body' => 'Deleted project - '.$proj['name']
+                );
+                $change->addChanges($array);
             }
 
             $this->_helper->redirector('index','project');

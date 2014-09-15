@@ -32,6 +32,17 @@ class RequestController extends Zend_Controller_Action
                 );
                 $Request = new Application_Model_DbTable_Request();
                 $Request->addRequest($data);
+
+                $change = new Application_Model_DbTable_Changes();
+                $array = array(
+                    'userId' => Zend_Auth::getInstance()->getIdentity()->id,
+                    'username' => Zend_Auth::getInstance()->getIdentity()->username,
+                    'date' => time(),
+                    'type' => 'Add',
+                    'body' => 'Added request - '.$form->getValue('description')
+                );
+                $change->addChanges($array);
+
                 $this->_helper->redirector('index', 'help');
 
             } else {
@@ -48,6 +59,16 @@ class RequestController extends Zend_Controller_Action
             $Request = new Application_Model_DbTable_Request();
             $data = array('id' => $id,'status' => '1');
             $Request->updateRequest($data);
+            $req = $Request->getRequest($id);
+            $change = new Application_Model_DbTable_Changes();
+            $array = array(
+                'userId' => Zend_Auth::getInstance()->getIdentity()->id,
+                'username' => Zend_Auth::getInstance()->getIdentity()->username,
+                'date' => time(),
+                'type' => 'Change',
+                'body' => 'Changed status request - '.$req['description']
+            );
+            $change->addChanges($array);
             $this->_helper->redirector('requestall', 'help');
         }
     }
