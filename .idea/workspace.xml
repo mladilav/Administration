@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c9704ea-0163-4a88-8ad9-268d7bce9b00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/projects.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/ChangeController.php" afterPath="$PROJECT_DIR$/application/controllers/ChangeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/HelpController.php" afterPath="$PROJECT_DIR$/application/controllers/HelpController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/IndexController.php" afterPath="$PROJECT_DIR$/application/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/MethodController.php" afterPath="$PROJECT_DIR$/application/controllers/MethodController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/ProjectController.php" afterPath="$PROJECT_DIR$/application/controllers/ProjectController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/RequestController.php" afterPath="$PROJECT_DIR$/application/controllers/RequestController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/UserController.php" afterPath="$PROJECT_DIR$/application/controllers/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/method/detail.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/method/detail.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/layouts/scripts/layout.phtml" afterPath="$PROJECT_DIR$/application/layouts/scripts/layout.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="administration.com.iws" />
@@ -35,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Add.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Add.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/forms/method/Add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="14" selection-start="460" selection-end="460" vertical-scroll-proportion="-0.8547486" vertical-offset="714" max-vertical-offset="1292">
+            <state line="15" column="14" selection-start="460" selection-end="460" vertical-scroll-proportion="17.653847" vertical-offset="714" max-vertical-offset="1292">
               <folding />
             </state>
           </provider>
@@ -59,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.phtml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="detail.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/method/detail.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="4" selection-start="979" selection-end="979" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="646">
+            <state line="24" column="8" selection-start="973" selection-end="973" vertical-scroll-proportion="0.66480446" vertical-offset="51" max-vertical-offset="663">
               <folding />
             </state>
           </provider>
@@ -946,9 +937,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/method/detail.phtml">
+    <entry file="file://$PROJECT_DIR$/application/forms/method/Add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="4" selection-start="979" selection-end="979" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="646">
+        <state line="15" column="14" selection-start="460" selection-end="460" vertical-scroll-proportion="17.653847" vertical-offset="714" max-vertical-offset="1292">
           <folding />
         </state>
       </provider>
@@ -960,9 +951,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/forms/method/Add.php">
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/method/detail.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="14" selection-start="460" selection-end="460" vertical-scroll-proportion="-0.8547486" vertical-offset="714" max-vertical-offset="1292">
+        <state line="24" column="8" selection-start="973" selection-end="973" vertical-scroll-proportion="0.66480446" vertical-offset="51" max-vertical-offset="663">
           <folding />
         </state>
       </provider>
