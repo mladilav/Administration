@@ -52,7 +52,7 @@
       <file leaf-file-name="detail.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/method/detail.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="4" selection-start="969" selection-end="969" vertical-scroll-proportion="0.66480446" vertical-offset="51" max-vertical-offset="663">
+            <state line="24" column="8" selection-start="965" selection-end="965" vertical-scroll-proportion="0.66480446" vertical-offset="51" max-vertical-offset="663">
               <folding />
             </state>
           </provider>
@@ -952,7 +952,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/method/detail.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="4" selection-start="969" selection-end="969" vertical-scroll-proportion="0.66480446" vertical-offset="51" max-vertical-offset="663">
+        <state line="24" column="8" selection-start="965" selection-end="965" vertical-scroll-proportion="0.66480446" vertical-offset="51" max-vertical-offset="663">
           <folding />
         </state>
       </provider>
