@@ -42,8 +42,6 @@ class Application_Form_Method_Add extends Zend_Form
         $description = new Zend_Form_Element_Textarea('description');
         $description->setLabel('Description:')
             ->setRequired(true)
-            ->addFilter('StripTags')
-            ->addFilter('StringTrim')
             ->addValidator('NotEmpty', true,
                 array('messages' => array('isEmpty' => $isEmptyMessage))
             );
@@ -51,8 +49,6 @@ class Application_Form_Method_Add extends Zend_Form
         $success
             ->setLabel('Success:')
             ->setRequired(true)
-            ->addFilter('StripTags')
-            ->addFilter('StringTrim')
             ->addValidator('NotEmpty', true,
                 array('messages' => array('isEmpty' => $isEmptyMessage))
             );
@@ -60,8 +56,6 @@ class Application_Form_Method_Add extends Zend_Form
         $data = new Zend_Form_Element_Textarea('data');
         $data ->setLabel('Data:')
             ->setRequired(true)
-            ->addFilter('StripTags')
-            ->addFilter('StringTrim')
             ->addValidator('NotEmpty', true,
                 array('messages' => array('isEmpty' => $isEmptyMessage))
             );
@@ -71,8 +65,6 @@ class Application_Form_Method_Add extends Zend_Form
 
 
         $this->addElements(array($id,$name,$projectId,$short, $description,$success,$data, $submit));
-
-
         $this->setMethod('post');
     }
 }

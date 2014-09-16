@@ -20,8 +20,6 @@ class Application_Form_Method_Error extends Zend_Form
         $description = new Zend_Form_Element_Textarea('description');
         $description->setLabel('Description:')
             ->setRequired(true)
-            ->addFilter('StripTags')
-            ->addFilter('StringTrim')
             ->addValidator('NotEmpty', true,
                 array('messages' => array('isEmpty' => $isEmptyMessage))
             );
@@ -29,8 +27,6 @@ class Application_Form_Method_Error extends Zend_Form
         $body= new Zend_Form_Element_Textarea('body');
         $body->setLabel('Body:')
             ->setRequired(true)
-            ->addFilter('StripTags')
-            ->addFilter('StringTrim')
             ->addValidator('NotEmpty', true,
                 array('messages' => array('isEmpty' => $isEmptyMessage))
             );
