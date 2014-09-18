@@ -71,7 +71,7 @@ class RequestController extends Zend_Controller_Action
                 'body' => 'Changed status request - '.$req['description']
             );
             $change->addChanges($array);
-            $this->_helper->redirector('requestall', 'help');
+            $this->_helper->redirector('index', 'request');
         }
     }
 
