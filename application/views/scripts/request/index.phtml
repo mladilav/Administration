@@ -15,7 +15,7 @@
 
         echo '<td>'.date("H:i:s d-m-Y",$request['date']).'</td>';
         echo '<td>';
-        if($request['status']==0){ echo '<a href="/help/requeststatus/id/'.$request['id'].'"><i class="icon-exclamation-sign"></i></a>';}
+        if($request['status']==0){ echo '<a href="/request/status/id/'.$request['id'].'"><i class="icon-exclamation-sign"></i></a>';}
         else {echo '<i class="icon-ok"></i>';}
         echo '</td></tr>';
     }
