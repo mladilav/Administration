@@ -1,11 +1,14 @@
 <legend>Last changes</legend>
-<table class="table table-bordered">
-    <tr>
+<table class="table table-bordered scrolling-table">
+    <thead>  <tr>
         <th>Username</th>
         <th>Description</th>
         <th>Date</th>
-    </tr>
-<?php foreach($this->change as $change) {?>
+
+
+    </tr>  </thead>
+    <tbody>
+    <?php foreach($this->change as $change) {?>
     <tr>
         <td><a href="/user/profile/id/<?=$change['userId'];?>"><?=$change['username']?></a></td>
         <td>
@@ -26,4 +29,5 @@
         </td>
         </tr>
 <?php } ?>
+    </tbody>
 </table>

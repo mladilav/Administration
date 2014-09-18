@@ -91,3 +91,53 @@ a.text-warning{
     padding: 10px;
     color: #999;
 }
+
+.scrolling-table {
+    width: 920px;
+    border: none;
+}
+
+
+
+.scrolling-table tr td:last-child {
+    border-right: none;
+}
+
+.scrolling-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+.scrolling-table tbody {
+    display: block;
+    height: 400px;
+    width: 920px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+
+.scrolling-table tr {
+    display: table;
+    width: 920px;
+    table-layout: fixed;
+}
+
+
+th:nth-child(1), td:nth-child(1) {
+
+    width: 100px;
+
+}
+
+th:nth-child(2), td:nth-child(2) {
+
+    width: 550px;
+
+}
+
+th:nth-child(3), td:nth-child(3) {
+
+    width: 150px;
+
+}
