@@ -124,19 +124,19 @@ a.text-warning{
 }
 
 
-th:nth-child(1), td:nth-child(1) {
+.scrolling-table th:nth-child(1),.scrolling-table td:nth-child(1) {
 
     width: 100px;
 
 }
 
-th:nth-child(2), td:nth-child(2) {
+.scrolling-table th:nth-child(2),.scrolling-table td:nth-child(2) {
 
     width: 550px;
 
 }
 
-th:nth-child(3), td:nth-child(3) {
+.scrolling-table th:nth-child(3), .scrolling-table td:nth-child(3) {
 
     width: 150px;
 
