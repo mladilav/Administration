@@ -71,6 +71,20 @@ class RequestController extends Zend_Controller_Action
                 'body' => 'Changed status request - '.$req['description']
             );
             $change->addChanges($array);
+
+            $email=new Application_Model_TEmail();
+            $email->from_email = 'info@vallverk.com';
+            $email->from_name = 'Vallverk';
+            $email->to_email = '';
+            $email->to_name = 'Users';
+            $email->subject = 'Changes';
+            $email->type = 'text/html';
+            $email->body = '
+                        <h1>Support service - Vallverk.com</h1>
+                            <p>Changed status request - '.$req['description'].'</p>';
+            $email->send();
+
+
             $this->_helper->redirector('index', 'request');
         }
     }
