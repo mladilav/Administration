@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c9704ea-0163-4a88-8ad9-268d7bce9b00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/TEmail.php" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\administration.com\public\img\alert.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\administration.com\public\img\change.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/RequestController.php" afterPath="$PROJECT_DIR$/application/controllers/RequestController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="7c9704ea-0163-4a88-8ad9-268d7bce9b00" name="Default" comment="" />
     <ignored path="administration.com.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,10 +32,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RequestController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/RequestController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="36" selection-start="2799" selection-end="2804" vertical-scroll-proportion="0.49532712" vertical-offset="1061" max-vertical-offset="2125">
+            <state line="78" column="36" selection-start="2799" selection-end="2804" vertical-scroll-proportion="-10.192307" vertical-offset="1061" max-vertical-offset="2125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/scripts/index/about.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.phtml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="17" selection-start="953" selection-end="953" vertical-scroll-proportion="0.7308411" vertical-offset="0" max-vertical-offset="535">
               <folding />
             </state>
           </provider>
@@ -358,6 +370,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administration.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="administration.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="change" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -577,11 +615,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/project/add.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="519" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/project/edit.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="519" />
@@ -732,11 +765,6 @@
         <state line="9" column="103" selection-start="854" selection-end="854" vertical-scroll-proportion="0.2859813" vertical-offset="0" max-vertical-offset="535" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="17" selection-start="953" selection-end="953" vertical-scroll-proportion="0.7308411" vertical-offset="0" max-vertical-offset="535" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/ErrorController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="5" selection-start="1869" selection-end="1869" vertical-scroll-proportion="-19.73077" vertical-offset="388" max-vertical-offset="1088" />
@@ -843,7 +871,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/RequestController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="36" selection-start="2799" selection-end="2804" vertical-scroll-proportion="0.49532712" vertical-offset="1061" max-vertical-offset="2125">
+        <state line="78" column="36" selection-start="2799" selection-end="2804" vertical-scroll-proportion="-10.192307" vertical-offset="1061" max-vertical-offset="2125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/about.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="17" selection-start="953" selection-end="953" vertical-scroll-proportion="0.7308411" vertical-offset="0" max-vertical-offset="535">
           <folding />
         </state>
       </provider>
