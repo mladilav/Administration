@@ -75,7 +75,7 @@ class RequestController extends Zend_Controller_Action
             $email=new Application_Model_TEmail();
             $email->from_email = 'info@vallverk.com';
             $email->from_name = 'Vallverk';
-            $email->to_email = '';
+            $email->to_email = 'mladilav2014@gmail.com';
             $email->to_name = 'Users';
             $email->subject = 'Changes';
             $email->type = 'text/html';
