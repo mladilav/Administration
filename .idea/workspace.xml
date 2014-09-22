@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7c9704ea-0163-4a88-8ad9-268d7bce9b00" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/RequestController.php" afterPath="$PROJECT_DIR$/application/controllers/RequestController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/DbTable/User.php" afterPath="$PROJECT_DIR$/application/models/DbTable/User.php" />
     </list>
     <ignored path="administration.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +38,16 @@
       <file leaf-file-name="RequestController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/RequestController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="44" selection-start="2777" selection-end="2777" vertical-scroll-proportion="0.27289718" vertical-offset="1163" max-vertical-offset="2125">
+            <state line="81" column="46" selection-start="2913" selection-end="2913" vertical-scroll-proportion="0.5906542" vertical-offset="1061" max-vertical-offset="2193">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/DbTable/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="32" selection-start="435" selection-end="435" vertical-scroll-proportion="-12.384615" vertical-offset="1" max-vertical-offset="969">
               <folding />
             </state>
           </provider>
@@ -97,7 +107,6 @@
         <option value="$PROJECT_DIR$/public/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/public/js/jquery-2.1.1.min.js" />
         <option value="$PROJECT_DIR$/public/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/application/models/DbTable/User.php" />
         <option value="$PROJECT_DIR$/public/js/script.js" />
         <option value="$PROJECT_DIR$/application/views/scripts/user/registration.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/user/index.phtml" />
@@ -124,6 +133,7 @@
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/application/views/scripts/method/index.phtml" />
         <option value="$PROJECT_DIR$/application/models/TEmail.php" />
+        <option value="$PROJECT_DIR$/application/models/DbTable/User.php" />
         <option value="$PROJECT_DIR$/application/controllers/RequestController.php" />
       </list>
     </option>
@@ -722,11 +732,6 @@
         <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0317757" vertical-offset="0" max-vertical-offset="535" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/DbTable/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0635514" vertical-offset="0" max-vertical-offset="782" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/user/profile.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="6" selection-start="527" selection-end="527" vertical-scroll-proportion="0.3244275" vertical-offset="0" max-vertical-offset="524" />
@@ -878,6 +883,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DbTable/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="32" selection-start="435" selection-end="435" vertical-scroll-proportion="-12.384615" vertical-offset="1" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/ChangeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="7" selection-start="103" selection-end="208" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="408">
@@ -887,7 +899,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/RequestController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="44" selection-start="2777" selection-end="2777" vertical-scroll-proportion="0.27289718" vertical-offset="1163" max-vertical-offset="2125">
+        <state line="81" column="46" selection-start="2913" selection-end="2913" vertical-scroll-proportion="0.5906542" vertical-offset="1061" max-vertical-offset="2193">
           <folding />
         </state>
       </provider>

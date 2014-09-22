@@ -14,6 +14,17 @@ class Application_Model_DbTable_User extends Zend_Db_Table_Abstract
         return $row->toArray();
     }
 
+    public function getUserByUsername($username)
+    {
+
+        $row = $this->fetchRow("username = '". $username."'");
+        if(!$row) {
+            throw new Exception("Нет записи с username -". $username);
+        }
+        return $row->toArray();
+    }
+
+
     public function addUser($data)
     {
         $row = $this->fetchAll("username = '".$data['username']."'");

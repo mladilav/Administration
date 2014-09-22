@@ -62,6 +62,7 @@ class RequestController extends Zend_Controller_Action
             $data = array('id' => $id,'status' => '1');
             $Request->updateRequest($data);
             $req = $Request->getRequest($id);
+
             $change = new Application_Model_DbTable_Changes();
             $array = array(
                 'userId' => Zend_Auth::getInstance()->getIdentity()->id,
@@ -72,10 +73,13 @@ class RequestController extends Zend_Controller_Action
             );
             $change->addChanges($array);
 
+            $userModel = new Application_Model_DbTable_User();
+            $user = $userModel->getUserByUsername($req['username']);
+
             $email=new Application_Model_TEmail();
             $email->from_email = 'info@vallverk.com';
             $email->from_name = 'Vallverk';
-            $email->to_email = 'mladilav2014@gmail.com';
+            $email->to_email = $user['email'];
             $email->to_name = 'Users';
             $email->subject = 'Changes';
             $email->type = 'text/html';
