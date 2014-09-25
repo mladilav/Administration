@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c9704ea-0163-4a88-8ad9-268d7bce9b00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/jquery.jscrollpane.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.jscrollpane.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.mousewheel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/mwheelIntent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/change/index.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/change/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/layouts/scripts/layout.phtml" afterPath="$PROJECT_DIR$/application/layouts/scripts/layout.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/script.js" afterPath="$PROJECT_DIR$/public/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="administration.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,7 +46,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="13" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.36567163" vertical-offset="1674" max-vertical-offset="3026">
+            <state line="110" column="14" selection-start="2168" selection-end="2168" vertical-scroll-proportion="0.36567163" vertical-offset="1674" max-vertical-offset="3026">
               <folding />
             </state>
           </provider>
@@ -846,7 +838,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="13" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.36567163" vertical-offset="1674" max-vertical-offset="3026">
+        <state line="110" column="14" selection-start="2168" selection-end="2168" vertical-scroll-proportion="0.36567163" vertical-offset="1674" max-vertical-offset="3026">
           <folding />
         </state>
       </provider>
