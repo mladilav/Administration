@@ -8,7 +8,7 @@ body{
     border-radius: 5px;
     box-shadow: 0 3px 3px #999;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 input[type="text"],textarea{
     width: 98%;
@@ -98,8 +98,6 @@ a.text-warning{
     border: none;
 }
 
-
-
 .scrolling-table tr td:last-child {
     border-right: none;
 }
@@ -107,7 +105,6 @@ a.text-warning{
 .scrolling-table tr:last-child td {
     border-bottom: none;
 }
-
 
 .scrolling-table tbody {
     display: block;
@@ -117,28 +114,46 @@ a.text-warning{
     overflow-y: auto;
 }
 
-
 .scrolling-table tr {
     display: table;
     width: 920px;
     table-layout: fixed;
 }
 
-
 .scrolling-table th:nth-child(1),.scrolling-table td:nth-child(1) {
-
     width: 100px;
-
 }
 
 .scrolling-table th:nth-child(2),.scrolling-table td:nth-child(2) {
-
     width: 550px;
-
 }
 
 .scrolling-table th:nth-child(3), .scrolling-table td:nth-child(3) {
-
     width: 150px;
+}
 
+.menu-tablet img{
+    height: 64px;
+    border:1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+}
+.menu-tablet table{
+    margin-top: 20px;
+}
+.menu-tablet table td{
+    padding: 0px 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #5a5a5a;}
+
+.menu-tablet img:hover{
+    background: none repeat scroll 0 0 #ddd;
+    box-shadow: 3px 2px 5px  #5a5a5a inset;
+    border:1px solid #ffffff;
+}
+
+.menu-tablet img:active{
+    background: none repeat scroll 0 0 #777;
+    box-shadow: 3px 2px 5px  #222 inset;
 }

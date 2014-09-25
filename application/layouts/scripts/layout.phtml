@@ -71,11 +71,10 @@ date_default_timezone_set("Europe/Kiev");
 	                    echo "<li><a href=\"{$url}\">Exit</a></li>";} else {?>
                         <li><a href="#registration"class="text-warning" role="button" class="text-warning" data-toggle="modal">Registration</a></li>
                         <?php }?>
-                        <li><a href="/img/handyBoyDB.png">DB-scheme!</a></li>
 
                     </ul>
-                    <?php
 
+                    <?php
                     if (!Zend_Auth::getInstance()->hasIdentity()) {?>
                     <form method="post" action="/user/login" class="login-form">
                         <input type="text" placeholder="Username..." name="username">
@@ -91,8 +90,23 @@ date_default_timezone_set("Europe/Kiev");
     </div>
 
     <div class="container">
-
-
+<div class="menu-tablet">
+<table align="center">
+    <tr>
+        <td><a href="/project"> <img src="/img/Product-documentation.png"></a></td>
+        <td><a href="/change"><img src="/img/Generate-tables.png"></a></td>
+        <td><a href="/request/send"><img src="/img/Select-Language.png"></a></td>
+        <td><a href="/help/error"><img src="/img/order-history.png"></a></td>
+        <td><a href="/img/handyBoyDB.png"><img src="/img/Sql-runner.png"></a></td>
+    </tr>
+    <tr>
+        <td>Projects</td>
+        <td>Recent changes</td>
+        <td>Request methods</td>
+        <td>Reports</td>
+        <td>DB-scheme</td>
+    </tr>
+</table></div>
 
     <div class="row-fluid">
         <div class="span12 cont">
