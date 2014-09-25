@@ -82,6 +82,7 @@ a.text-warning{
 .profile .avatar{
     background: none repeat scroll 0 0 #ddd;
     border-radius: 10px;
+    width: 128px;
     box-shadow: 3px 2px 5px  #5a5a5a inset;
     border:1px solid #ffffff;
     padding: 10px;
