@@ -111,7 +111,7 @@ a.text-warning{
     height: 400px;
     width: 920px;
     overflow: hidden;
-    overflow-y: auto;
+    overflow-y:auto;
 }
 
 .scrolling-table tr {
@@ -156,4 +156,18 @@ a.text-warning{
 .menu-tablet img:active{
     background: none repeat scroll 0 0 #777;
     box-shadow: 3px 2px 5px  #222 inset;
+}
+
+.change-table .jspTrack{
+    background: none repeat scroll 0 0 #ddd;
+    box-shadow: 3px 2px 5px  #999 inset;
+    border-radius: 6px;
+}
+.change-table  .jspVerticalBar{
+    background: #FFFFFF;
+}
+.change-table .jspDrag{
+    border-radius: 6px;
+    background: #444;
+    box-shadow: 3px 2px 5px  #666 inset;
 }

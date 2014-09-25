@@ -23,7 +23,10 @@ $(document).ready(function() {
         }
     });
 
-
+    $(function()
+    {
+        $('.change-table').jScrollPane();
+    });
 
 });
 
