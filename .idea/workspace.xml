@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c9704ea-0163-4a88-8ad9-268d7bce9b00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/AjaxController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/forms/Bugs.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/DbTable/Bugs.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/BugsController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/DbTable/Category.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/scripts/bugs/category.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/scripts/project/detail.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/scripts/bugs/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/ProjectController.php" afterPath="$PROJECT_DIR$/application/controllers/ProjectController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/project/index.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/project/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/layouts/scripts/layout.phtml" afterPath="$PROJECT_DIR$/application/layouts/scripts/layout.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/AjaxController.php" afterPath="$PROJECT_DIR$/application/controllers/AjaxController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/bugs/category.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/bugs/category.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/script.js" afterPath="$PROJECT_DIR$/public/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="administration.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,16 +31,16 @@
       <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="33" selection-start="2839" selection-end="2839" vertical-scroll-proportion="0.0" vertical-offset="1186" max-vertical-offset="2805">
+            <state line="140" column="48" selection-start="4103" selection-end="4103" vertical-scroll-proportion="0.0" vertical-offset="1186" max-vertical-offset="2805">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.phtml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/bugs/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="4" selection-start="1520" selection-end="1520" vertical-scroll-proportion="0.77757007" vertical-offset="196" max-vertical-offset="731">
+            <state line="36" column="4" selection-start="1520" selection-end="1520" vertical-scroll-proportion="-23.538462" vertical-offset="0" max-vertical-offset="731">
               <folding />
             </state>
           </provider>
@@ -59,7 +49,7 @@
       <file leaf-file-name="category.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/bugs/category.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="990" selection-end="994" vertical-scroll-proportion="-14.692307" vertical-offset="162" max-vertical-offset="697">
+            <state line="7" column="18" selection-start="316" selection-end="326" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="697">
               <folding />
             </state>
           </provider>
@@ -68,25 +58,25 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="239" column="20" selection-start="4616" selection-end="4616" vertical-scroll-proportion="0.0" vertical-offset="3553" max-vertical-offset="4182">
+            <state line="238" column="0" selection-start="4573" selection-end="4573" vertical-scroll-proportion="0.0" vertical-offset="3179" max-vertical-offset="4148">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bugs.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/DbTable/Bugs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="21" selection-start="1563" selection-end="1563" vertical-scroll-proportion="-14.384615" vertical-offset="561" max-vertical-offset="1156">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AjaxController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AjaxController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/AjaxController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="12" selection-start="1003" selection-end="1069" vertical-scroll-proportion="-12.076923" vertical-offset="264" max-vertical-offset="2431">
+            <state line="109" column="12" selection-start="3454" selection-end="3454" vertical-scroll-proportion="0.8728972" vertical-offset="1386" max-vertical-offset="3111">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MethodController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/MethodController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="104" column="44" selection-start="3611" selection-end="4100" vertical-scroll-proportion="-12.153846" vertical-offset="1452" max-vertical-offset="4845">
               <folding />
             </state>
           </provider>
@@ -150,12 +140,12 @@
         <option value="$PROJECT_DIR$/application/models/DbTable/Category.php" />
         <option value="$PROJECT_DIR$/application/controllers/BugsController.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/project/detail.phtml" />
-        <option value="$PROJECT_DIR$/application/controllers/AjaxController.php" />
         <option value="$PROJECT_DIR$/application/models/DbTable/Bugs.php" />
-        <option value="$PROJECT_DIR$/public/js/script.js" />
+        <option value="$PROJECT_DIR$/application/views/scripts/bugs/index.phtml" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/application/views/scripts/bugs/category.phtml" />
-        <option value="$PROJECT_DIR$/application/views/scripts/bugs/index.phtml" />
+        <option value="$PROJECT_DIR$/public/js/script.js" />
+        <option value="$PROJECT_DIR$/application/controllers/AjaxController.php" />
       </list>
     </option>
   </component>
@@ -818,13 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/MethodController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="60" selection-start="4118" selection-end="4162" vertical-scroll-proportion="0.9401869" vertical-offset="1299" max-vertical-offset="4845">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/Zend/Db/Table/Abstract.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1031" column="20" selection-start="31947" selection-end="31947" vertical-scroll-proportion="0.348659" vertical-offset="17022" max-vertical-offset="27217">
@@ -842,13 +825,6 @@
     <entry file="file://$PROJECT_DIR$/application/models/DbTable/Changes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="26" selection-start="0" selection-end="647" vertical-scroll-proportion="0.52918285" vertical-offset="102" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/ProjectController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="5" selection-start="4405" selection-end="4582" vertical-scroll-proportion="0.7140187" vertical-offset="1811" max-vertical-offset="2380">
           <folding />
         </state>
       </provider>
@@ -888,13 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/AjaxController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="12" selection-start="1003" selection-end="1069" vertical-scroll-proportion="-12.076923" vertical-offset="264" max-vertical-offset="2431">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/DbTable/Bugs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="21" selection-start="1563" selection-end="1563" vertical-scroll-proportion="-14.384615" vertical-offset="561" max-vertical-offset="1156">
@@ -902,30 +871,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="33" selection-start="2839" selection-end="2839" vertical-scroll-proportion="0.0" vertical-offset="1186" max-vertical-offset="2805">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="239" column="20" selection-start="4616" selection-end="4616" vertical-scroll-proportion="0.0" vertical-offset="3553" max-vertical-offset="4182">
+        <state line="238" column="0" selection-start="4573" selection-end="4573" vertical-scroll-proportion="0.0" vertical-offset="3553" max-vertical-offset="4148">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/bugs/category.phtml">
+    <entry file="file://$PROJECT_DIR$/public/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="990" selection-end="994" vertical-scroll-proportion="-14.692307" vertical-offset="162" max-vertical-offset="697">
+        <state line="140" column="48" selection-start="4103" selection-end="4103" vertical-scroll-proportion="0.0" vertical-offset="1186" max-vertical-offset="2805">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/ProjectController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="5" selection-start="4405" selection-end="4582" vertical-scroll-proportion="0.7140187" vertical-offset="1811" max-vertical-offset="2380">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/bugs/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="4" selection-start="1520" selection-end="1520" vertical-scroll-proportion="0.77757007" vertical-offset="196" max-vertical-offset="731">
+        <state line="36" column="4" selection-start="1520" selection-end="1520" vertical-scroll-proportion="-23.538462" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/bugs/category.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="18" selection-start="316" selection-end="326" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/MethodController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="44" selection-start="3611" selection-end="4100" vertical-scroll-proportion="-12.153846" vertical-offset="1452" max-vertical-offset="4845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/AjaxController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="12" selection-start="3454" selection-end="3454" vertical-scroll-proportion="0.8728972" vertical-offset="1386" max-vertical-offset="3111">
           <folding />
         </state>
       </provider>

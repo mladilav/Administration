@@ -138,7 +138,7 @@ function GetBugs(json) {
 function GetCategory(json) {
 
     var array = jQuery.parseJSON( json );
-    var ul = document.getElementById('sortable');
+    var ul = document.getElementById('categories');
     ul.innerHTML = '';
     for(var i = 0; i < array.length; i++){
 

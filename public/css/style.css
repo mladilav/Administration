@@ -236,6 +236,3 @@ input[type="checkbox"]:checked:disabled + label::before {
     opacity: 0.8;
 }
 
-#category-text, #text{
-    margin-top: 20px;
-}

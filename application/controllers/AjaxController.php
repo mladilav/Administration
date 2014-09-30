@@ -18,8 +18,29 @@ class AjaxController extends Zend_Controller_Action
             $array = array(
                 'id' =>  $this->getRequest()->getPost('id'),
                 'status' =>  $this->getRequest()->getPost('status'),
+                'date'=> time(),
+                'userIdWork'=> Zend_Auth::getInstance()->getIdentity()->id,
+
             );
             $bugs->updateBugs($array);
+        }
+
+        if($this->getRequest()->getPost('status')){
+
+            $bugsArray = $bugs->getBugs($this->getRequest()->getPost('id'));
+            $project = new Application_Model_DbTable_Projects();
+
+            $projectArray = $project->getProjects($bugsArray['projectId']);
+
+            $change = new Application_Model_DbTable_Changes();
+            $array = array(
+                'userId' => Zend_Auth::getInstance()->getIdentity()->id,
+                'username' => Zend_Auth::getInstance()->getIdentity()->username,
+                'date' => time(),
+                'type' => 'Change',
+                'body' => 'Changed status - '.$bugsArray['text'].' in project '.$projectArray['name']
+            );
+            $change->addChanges($array);
         }
 
     }
@@ -32,7 +53,7 @@ class AjaxController extends Zend_Controller_Action
             $categoryId = $_POST['categoryId'];
             $number = $bugs->getNumber($projectId,$categoryId);
 
-            if(!$number){$i = 0;} else{
+            if(!$number){$i = 1;} else{
             $i = $number['number']+1;}
 
             $data = array(
@@ -45,10 +66,29 @@ class AjaxController extends Zend_Controller_Action
                 'categoryId' => $categoryId
             );
 
-            $id = $bugs->insert($data);
-            $bugsArray = $bugs->getBugsByProjectAndCategory($projectId,$categoryId);
 
-            echo json_encode($bugsArray);
+
+            $id = $bugs->insert($data);
+
+            $bugsArray = $bugs->getBugs($id);
+            $project = new Application_Model_DbTable_Projects();
+
+            $projectArray = $project->getProjects($bugsArray['projectId']);
+
+            $change = new Application_Model_DbTable_Changes();
+            $array = array(
+                'userId' => Zend_Auth::getInstance()->getIdentity()->id,
+                'username' => Zend_Auth::getInstance()->getIdentity()->username,
+                'date' => time(),
+                'type' => 'Add',
+                'body' => 'Add task  - '.$bugsArray['text'].' in project '.$projectArray['name']
+            );
+            $change->addChanges($array);
+
+
+            $Array = $bugs->getBugsByProjectAndCategory($projectId,$categoryId);
+
+            echo json_encode($Array);
 
         }
 
