@@ -10,7 +10,7 @@
 <?php
     foreach($this->project as $project)
     {
-        echo '<tr><td><a href="/method/index/project/'.$project['id'].'">'.$project['name'].'</a></td>';
+        echo '<tr><td><a href="/project/detail/?id='.$project['id'].'">'.$project['name'].'</a></td>';
         echo '<td>'.$project['description'].'</td>';
         echo '<td><a href="/project/edit/id/'.$project['id'].'"><i class="icon-pencil"></i></a></td>';
         echo '<td><a href="/project/delete/id/'.$project['id'].'"><i class="icon-remove"></i></a></td></tr>';

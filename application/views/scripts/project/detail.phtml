@@ -1,0 +1,7 @@
+<legend><?= $this->project['name'];?></legend>
+<ul class="breadcrumb">
+    <li><a href="/project">Projects</a> <span class="divider">/</span></li>
+    <li><?=$this->project['name'];?></li>
+</ul>
+<a href="/method/index/project/<?= $this->project['id'];?>"><div class="plash">REST API</div></a>
+<a href="/bugs/category/?projectId=<?= $this->project['id'];?>"><div class="plash orange">Tasker</div></a>

@@ -121,6 +121,14 @@ class ProjectController extends Zend_Controller_Action
     }
 
 
+    public function detailAction(){
+
+        $project = new Application_Model_DbTable_Projects();
+        $id = $this->_getParam('id', 0);
+        if($id){
+        $this->view->project = $project->getProjects($id);}
+    }
+
 
 }
 

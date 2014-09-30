@@ -171,3 +171,71 @@ a.text-warning{
     background: #444;
     box-shadow: 3px 2px 5px  #666 inset;
 }
+
+.bugs-status{
+    display: inline-block;
+}
+
+
+
+input[type="checkbox"],
+input[type="radio"] {
+    display:none;
+}
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    font: 18px bold;
+    color: #444;
+    cursor: pointer;
+}
+input[type="checkbox"] + label::before{
+    content: "";
+    display: inline-block;
+    float: right;
+    height: 18px;
+    width: 18px;
+    margin: -13px 5px 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+input[type="checkbox"] + label::before {
+    background-image: url(/img/Checkbox-Empty.png);
+}
+
+input[type="checkbox"]:checked + label::before {
+    background-image: url(/img/Checkbox-Full.png);
+}
+
+input[type="checkbox"]:disabled + label::before {
+
+}
+input[type="checkbox"]:checked:disabled + label::before {
+
+}
+
+.plash{
+    background: none repeat scroll 0 0 #0044cc;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    margin: 10px;
+    opacity: 0.65;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+
+.orange{
+    background: none repeat scroll 0 0 #FF4500;
+}
+.plash:hover{
+    box-shadow: 0 2px 5px #000;
+}
+.plash:active{
+    opacity: 0.8;
+}
+
+#category-text, #text{
+    margin-top: 20px;
+}

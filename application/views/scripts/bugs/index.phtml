@@ -1,0 +1,38 @@
+<legend> Bugs </legend>
+
+<ul class="breadcrumb">
+    <li><a href="/project">Projects</a> <span class="divider">/</span></li>
+    <li><a href="/project/detail/?id=<?=$this->project['id'];?>"><?=$this->project['name'];?></a> <span class="divider">/</span></li>
+    <li><a href="/bugs/category/?projectId=<?=$this->project['id'];?>">Tasker</a> <span class="divider">/</span></li>
+    <li class="active"><?=$this->category['name'];?></li>
+</ul>
+<ul id="sortable" class="nav nav-pills nav-stacked"
+    data-project="<?=$this->project['id'];?>"
+    data-category="<?=$this->category['id'];?>"
+    >
+<?php if ($this->bugs) { ?>
+
+        <?php foreach ($this->bugs as &$bugs) { ?>
+                <li id="number-<?=$bugs['number'];?>"
+                    <?php if($bugs['status'] == 1){ echo 'class="active"';}?>>
+                    <a><?=$bugs['text'];?>
+                        <input type="checkbox" id="check-<?=$bugs['id'];?>"   data-id="<?=$bugs['id'];?>"
+                               class="bugs-status"
+                            <?php if($bugs['status'] == 1){ echo 'checked';}?>
+                            >
+                        <label for="check-<?=$bugs['id'];?>"></label>
+                    </a>
+                </li>
+        <?php } ?>
+
+
+<?php } ?>
+</ul>
+    <?php if ($this->bugs == 0)  {?>
+        <div class="alert alert-block alert-info">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h4>Attention!</h4>
+            None bugs!</div>
+<?php } ?>
+<hr>
+<?= $this->form; ?>
