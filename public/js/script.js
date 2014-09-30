@@ -32,8 +32,8 @@ $(document).ready(function() {
         axis: 'y',
             update : function (event, ui) {
         var data = $( "#sortable").sortable('serialize');
-        var projectId = ui.item.attr('data-project');
-        var categoryId = ui.item.attr('data-category');
+        var projectId = $( "#sortable").attr('data-project');
+        var categoryId =  $( "#sortable").attr('data-category');
         var data2 = data+"&projectId="+projectId+"&categoryId="+categoryId;
                 $.ajax({
                     type: "POST",
@@ -112,8 +112,6 @@ function GetBugs(json) {
         var label = document.createElement('label');
 
         li.setAttribute('id','number-'+array[i].number);
-        li.setAttribute('data-project',array[i].projectId);
-        li.setAttribute('data-category',array[i].categoryId);
 
         if(array[i].status == 1){
             li.setAttribute('class','active');
