@@ -35,7 +35,7 @@ $(document).ready(function() {
         var projectId = $( "#sortable").attr('data-project');
         var categoryId =  $( "#sortable").attr('data-category');
         var data2 = data+"&projectId="+projectId+"&categoryId="+categoryId;
-                $.ajax({ 
+                $.ajax({
                     type: "POST",
                     url: "/ajax/sort",
                     data: data2,

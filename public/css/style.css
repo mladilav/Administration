@@ -237,7 +237,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
-    background-color: #0088cc;
+    background-color: #104E8B;
     opacity: 0.5;
     color: #ffffff;
 }
