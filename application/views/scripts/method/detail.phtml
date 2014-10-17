@@ -14,11 +14,12 @@
 <hr>
 <p><b class="text-error">ERROR</b></p>
 <?php foreach($this->methoderror as $methoderror){ ?>
+    <?php  if (Zend_Auth::getInstance()->getIdentity()->role == 'admin'){ ?>
     <div class="pull-right">
-    <a href="/method/erroredit/id/<?=$methoderror['id'];?>"><i class="icon-pencil"></i></a>
-    <a href="/method/errordelete/id/<?=$methoderror['id'];?>"><i class="icon-remove"></i></a>
-        </div>
-
+        <a href="/method/erroredit/id/<?=$methoderror['id'];?>"><i class="icon-pencil"></i></a>
+        <a href="/method/errordelete/id/<?=$methoderror['id'];?>"><i class="icon-remove"></i></a>
+    </div>
+    <?php }?>
 <p><b><?=$methoderror['name'];?></b></p>
 <div class="well"><?=$methoderror['description'];?></div>
 <p><?=$methoderror['body'];?></p>
