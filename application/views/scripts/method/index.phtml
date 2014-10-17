@@ -15,8 +15,8 @@
         <tr><td><a href="/method/detail/id/<?=$methods['id']?>"><?=$methods['name']?></a></td>
         <td><?=$methods['short']?></td>
             <?php  if (Zend_Auth::getInstance()->getIdentity()->role == 'admin'){ ?>
-            <td><a href="/method/edit/id/<?=$methods['id']?>"><i class="icon-pencil"></i></a></td>';
-        <td><a href="/method/delete/id/<?=$methods['id']?>"><i class="icon-remove"></i></a></td></tr>';
+            <td><a href="/method/edit/id/<?=$methods['id']?>"><i class="icon-pencil"></i></a></td>
+        <td><a href="/method/delete/id/<?=$methods['id']?>"><i class="icon-remove"></i></a></td></tr>
     <?php } ?>
     <?php } ?>
     </tbody>
