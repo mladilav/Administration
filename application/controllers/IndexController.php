@@ -19,6 +19,9 @@ class IndexController extends Zend_Controller_Action
         $project = new Application_Model_DbTable_Projects();
         $this->view->project = $project->fetchAll();
     }
+    public function reportsAction(){
+
+    }
 
 }
 
