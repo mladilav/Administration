@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c9704ea-0163-4a88-8ad9-268d7bce9b00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/scripts/index/reports.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/IndexController.php" afterPath="$PROJECT_DIR$/application/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/index.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/reports.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/reports.phtml" />
     </list>
     <ignored path="administration.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,10 +37,8 @@
       <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="-1.5882353" vertical-offset="0" max-vertical-offset="918">
-              <folding>
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="2" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="-0.0" vertical-offset="54" max-vertical-offset="918">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,25 +46,25 @@
       <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="5" selection-start="303" selection-end="303" vertical-scroll-proportion="-10.323529" vertical-offset="0" max-vertical-offset="891">
+            <state line="13" column="5" selection-start="303" selection-end="303" vertical-scroll-proportion="-0.85294116" vertical-offset="322" max-vertical-offset="891">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="455" selection-end="455" vertical-scroll-proportion="0.26895306" vertical-offset="472" max-vertical-offset="2889">
+            <state line="23" column="0" selection-start="455" selection-end="455" vertical-scroll-proportion="-4.382353" vertical-offset="472" max-vertical-offset="2889">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reports.phtml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="reports.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/reports.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="42" selection-start="1690" selection-end="1690" vertical-scroll-proportion="-11.529411" vertical-offset="499" max-vertical-offset="1161">
+            <state line="37" column="48" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.75359714" vertical-offset="580" max-vertical-offset="1161">
               <folding />
             </state>
           </provider>
@@ -175,6 +170,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -357,7 +353,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -428,9 +423,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.244713" sideWeight="0.8755981" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24848942" sideWeight="0.87440383" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.244713" sideWeight="0.12440191" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24848942" sideWeight="0.12400636" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -677,23 +672,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/method/detail.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="4" selection-start="897" selection-end="897" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1080">
-          <folding />
-        </state>
+        <state line="20" column="4" selection-start="897" selection-end="897" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1080" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/method/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.2913669" vertical-offset="162" max-vertical-offset="756">
-          <folding />
-        </state>
+        <state line="12" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.2913669" vertical-offset="162" max-vertical-offset="756" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/project/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="12" selection-start="378" selection-end="450" vertical-scroll-proportion="0.46582735" vertical-offset="119" max-vertical-offset="675">
-          <folding />
-        </state>
+        <state line="14" column="12" selection-start="378" selection-end="450" vertical-scroll-proportion="0.46582735" vertical-offset="119" max-vertical-offset="675" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
@@ -703,32 +692,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/reports.phtml">
+    <entry file="file://$PROJECT_DIR$/application/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="42" selection-start="1690" selection-end="1690" vertical-scroll-proportion="-11.529411" vertical-offset="499" max-vertical-offset="1161">
+        <state line="23" column="0" selection-start="455" selection-end="455" vertical-scroll-proportion="-4.382353" vertical-offset="472" max-vertical-offset="2889">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="-1.5882353" vertical-offset="0" max-vertical-offset="918">
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="2" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="-0.0" vertical-offset="54" max-vertical-offset="918">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="303" selection-end="303" vertical-scroll-proportion="-10.323529" vertical-offset="0" max-vertical-offset="891">
+        <state line="13" column="5" selection-start="303" selection-end="303" vertical-scroll-proportion="-0.85294116" vertical-offset="322" max-vertical-offset="891">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/UserController.php">
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/reports.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="455" selection-end="455" vertical-scroll-proportion="0.26895306" vertical-offset="472" max-vertical-offset="2889">
+        <state line="37" column="48" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.75359714" vertical-offset="580" max-vertical-offset="1161">
           <folding />
         </state>
       </provider>
