@@ -80,6 +80,11 @@ $(document).ready(function() {
         });
     });
 
+    $(document).on('click','.close',function(){
+    $('#reports').hide();
+    $('.modal-backdrop').hide();
+    });
+
     $(document).on('click','#add-category',function(){
 
         var name = $("#category-text").val();

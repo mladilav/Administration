@@ -241,3 +241,11 @@ input[type="checkbox"]:checked:disabled + label::before {
     opacity: 0.5;
     color: #ffffff;
 }
+#reports{
+    width: 900px;
+    height: 600px;
+    margin-left: -450px;
+}
+#reports .modal-body{
+    overflow: visible;
+}
