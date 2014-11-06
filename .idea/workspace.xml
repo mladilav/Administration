@@ -66,7 +66,7 @@
       <file leaf-file-name="reports.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/reports.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="31" selection-start="5801" selection-end="5801" vertical-scroll-proportion="0.70863307" vertical-offset="2090" max-vertical-offset="2646">
+            <state line="89" column="0" selection-start="5685" selection-end="5685" vertical-scroll-proportion="0.56294966" vertical-offset="2090" max-vertical-offset="2646">
               <folding />
             </state>
           </provider>
@@ -779,7 +779,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/reports.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="31" selection-start="5801" selection-end="5801" vertical-scroll-proportion="0.70863307" vertical-offset="2090" max-vertical-offset="2646">
+        <state line="89" column="0" selection-start="5685" selection-end="5685" vertical-scroll-proportion="0.56294966" vertical-offset="2090" max-vertical-offset="2646">
           <folding />
         </state>
       </provider>
