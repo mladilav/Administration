@@ -1,7 +1,58 @@
-<img src="/img/warning.png" align="left">
+<p>
+    <img src="/img/warning.png" align="left">
 <H1>ОБНОВЛЕНИЯ НА СЕРВЕРЕ!</H1>
 <a href="http://help-api.vallverk.com/img/handyBoyDB.png">Изменена схема базы данных!</a>
-<h2>Обновлены методы</h2>
+<hr></p><br>
+<H2>06.11.2014</H2>
+
+<h3 class="text-error">Обновлены методы</h3>
+<ol>
+    <li>Изменен метод <a href="http://help-api.vallverk.com/method/detail/id/36">POST /142.4.217.86/service/bindadd</a>
+    добавлено поле "options" - для массажеров, для записи типов массажа которые выбрал сервис</li>
+    <li>Изменен метод <a href="http://help-api.vallverk.com/method/detail/id/38">GET /142.4.217.86/service/addons/?jobId=1</a>
+        изменены возвращаемые данные</li>
+    <li>Изменен метод <a href="http://help-api.vallverk.com/method/detail/id/39">GET /142.4.217.86/addons</a>
+        изменены возвращаемые данные</li>
+    <li>Изменен метод <a href="http://help-api.vallverk.com/method/detail/id/40">GET /142.4.217.86/addons/?jobId=1</a>
+        изменены возвращаемые данные</li>
+</ol>
+Пояснение к аддонам все хранится в таблице вида
+<img src="/img/addons.png">
+
+<h3 class="text-error">Добавлены методы</h3>
+<ul>
+    <li><h4> АДДОНЫ </h4>
+        <ol>
+        <li>Сохранение аддонов выбранных пользователем <a href="http://help-api.vallverk.com/method/detail/id/41"> POST /142.4.217.86/service/setaddons</a></li>
+        <li>Удаление аддонов выбраных пользователем <a href="http://help-api.vallverk.com/method/detail/id/42">/142.4.217.86/service/deleteaddons/?id=1</a></li>
+        </ol>
+    </li>
+    <li><h4>РАССПИСАНИЕ</h4>
+        <ol>
+            <li>Сохрание постоянного расписания по дням недели <a href="http://help-api.vallverk.com/method/detail/id/43"> POST /142.4.217.86/schedule/add</a>
+                <div class="alert alert-error">
+                    <h4>ВНИМАНИЕ!</h4>
+                    <p>Дни недели записываются в виде  1 - Monday; 2 - Tuesday; 3 - Wednesday; 4 - Thursday; 5 - Friday; 6 - Saturday; 7 - Sunday.</p>
+                    <p>Время в json вида [{"start":"6:30","end":"10:00"},{"start":"11:30","end":"12:00"},{"start":"18:00","end":"22:00"}]</p>
+                </div>
+            </li>
+            <li>Сохрание кастомного рассписания по дате <a href="http://help-api.vallverk.com/method/detail/id/44"> POST /142.4.217.86/schedule/add/?current=yes</a>
+                <div class="alert alert-error">
+                    <h4>ВНИМАНИЕ!</h4>
+                    <p>Время в json вида [{"start":"6:30","end":"10:00"},{"start":"11:30","end":"12:00"},{"start":"18:00","end":"22:00"}]</p>
+                </div>
+            </li>
+            <li>Вывод постояного рассписания по сервису за неделю <a href="http://help-api.vallverk.com/method/detail/id/45"> GET /142.4.217.86/schedule/?serviceId=1</a></li>
+            <li>Вывод постояного рассписания по сервису за 1 день<a href="http://help-api.vallverk.com/method/detail/id/46"> GET /142.4.217.86/schedule/?serviceId=1&day=1</a></li>
+            <li>Вывод кастомного рассписания по сервису <a href="http://help-api.vallverk.com/method/detail/id/47"> GET /142.4.217.86/schedule/?current=yes&serviceId=1</a></li>
+            <li>Вывод кастомного рассписания по сервису за определенный день<a href="http://help-api.vallverk.com/method/detail/id/48"> GET /142.4.217.86/schedule/?current=yes&serviceId=1&date=1</a></li>
+            <li>Удаление постояного рассписания сервиса<a href="http://help-api.vallverk.com/method/detail/id/49"> GET /142.4.217.86/schedule/delete/?serviceId=1</a></li>
+        </ol>
+    </li>
+</ul>
+<hr>
+<H2>03.11.2014</H2>
+<h3>Обновлены методы</h3>
 <ol>
     <li> Метод <a href="http://help-api.vallverk.com/method/detail/id/13">
                 добавления нового сервиса</a>. Изменены входные данные и работа метода.
@@ -15,7 +66,7 @@
             Вывод работы по id</a>. Изменены данные на выходе. (добавлен вывод аддонов).
     </li>
   </ol>
-<h2>Добавлены методы</h2>
+<h3>Добавлены методы</h3>
 <ol>
     <li>Метод <a href="http://help-api.vallverk.com/method/detail/id/36">
             добавления связи </a> "Сервер - Тип работы".  </li>
@@ -30,9 +81,10 @@
 
 </ol>
 <p>
-    <h2>Изменения в базе данных</h2>
+    <h3>Изменения в базе данных</h3>
     Добавлены картинки в виде поле icon в typejob {"A":"/uploads/icon/hand_A.png","NA":"/uploads/icon/hand_NA.png"}
 </p>
+
 
 <a href="http://help-api.vallverk.com/help/error"><h3>Сообщить об ошибке </h3></a>
 <a href="http://help-api.vallverk.com/request/add"><h3>Запросить метод</h3></a>
