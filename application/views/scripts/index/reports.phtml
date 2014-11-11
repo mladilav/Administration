@@ -3,6 +3,25 @@
 <H1>ОБНОВЛЕНИЯ НА СЕРВЕРЕ!</H1>
 <a href="http://help-api.vallverk.com/img/handyBoyDB.png">Изменена схема базы данных!</a>
 <hr></p><br>
+<H2>11.11.2014</H2>
+<h3 class="text-error">Добавлены методы</h3>
+<ul>
+    <li><h4> БЛОК ЛИСТ </h4>
+        <ol>
+            <li>Добавить пользователя в блок лист<a href="http://help-api.vallverk.com/method/detail/id/53"> POST /142.4.217.86/block/add</a></li>
+            <li>Проверить есть ли пользователь в блок листе <a href="http://help-api.vallverk.com/method/detail/id/54">POST /142.4.217.86/block/check</a></li>
+            <li>Удалить пользователя из блок листа <a href="http://help-api.vallverk.com/method/detail/id/55">POST /142.4.217.86/block/delete</a></li>
+        </ol>
+    </li>
+    <li><h4>FAVORITE</h4>
+        <ol>
+            <li>Добавить пользователя в favorite лист<a href="http://help-api.vallverk.com/method/detail/id/56"> POST /142.4.217.86/favorite/add</a></li>
+            <li>Проверить есть ли пользователь в favorite листе <a href="http://help-api.vallverk.com/method/detail/id/57">POST /142.4.217.86/favorite/check</a></li>
+            <li>Удалить пользователя из favorite листа <a href="http://help-api.vallverk.com/method/detail/id/58">POST /142.4.217.86/favorite/delete</a></li>
+        </ol>
+    </li>
+   </ul>
+<hr>
 <H2>06.11.2014</H2>
 
 <h3 class="text-error">Обновлены методы</h3>
@@ -27,7 +46,7 @@
         <li>Удаление аддонов выбраных пользователем <a href="http://help-api.vallverk.com/method/detail/id/42">/142.4.217.86/service/deleteaddons/?id=1</a></li>
         </ol>
     </li>
-    <li><h4>РАССПИСАНИЕ</h4>
+    <li><h4>РАСПИСАНИЕ</h4>
         <ol>
             <li>Сохрание постоянного расписания по дням недели <a href="http://help-api.vallverk.com/method/detail/id/43"> POST /142.4.217.86/schedule/add</a>
                 <div class="alert alert-error">
@@ -36,20 +55,20 @@
                     <p>Время в json вида [{"start":"6:30","end":"10:00"},{"start":"11:30","end":"12:00"},{"start":"18:00","end":"22:00"}]</p>
                 </div>
             </li>
-            <li>Сохрание кастомного рассписания по дате <a href="http://help-api.vallverk.com/method/detail/id/44"> POST /142.4.217.86/schedule/add/?current=yes</a>
+            <li>Сохрание кастомного расписания по дате <a href="http://help-api.vallverk.com/method/detail/id/44"> POST /142.4.217.86/schedule/add/?current=yes</a>
                 <div class="alert alert-error">
                     <h4>ВНИМАНИЕ!</h4>
                     <p>Время в json вида [{"start":"6:30","end":"10:00"},{"start":"11:30","end":"12:00"},{"start":"18:00","end":"22:00"}]</p>
                 </div>
             </li>
-            <li>Вывод постояного рассписания по сервису за неделю <a href="http://help-api.vallverk.com/method/detail/id/45"> GET /142.4.217.86/schedule/?serviceId=1</a></li>
-            <li>Вывод постояного рассписания по сервису за 1 день<a href="http://help-api.vallverk.com/method/detail/id/46"> GET /142.4.217.86/schedule/?serviceId=1&day=1</a></li>
-            <li>Вывод кастомного рассписания по сервису <a href="http://help-api.vallverk.com/method/detail/id/47"> GET /142.4.217.86/schedule/?current=yes&serviceId=1</a></li>
-            <li>Вывод кастомного рассписания по сервису за определенный день<a href="http://help-api.vallverk.com/method/detail/id/48"> GET /142.4.217.86/schedule/?current=yes&serviceId=1&date=1</a></li>
-            <li>Удаление постояного рассписания сервиса<a href="http://help-api.vallverk.com/method/detail/id/49"> GET /142.4.217.86/schedule/delete/?serviceId=1</a></li>
-            <li>Удаление постояного рассписания сервиса по дню недели<a href="http://help-api.vallverk.com/method/detail/id/50"> GET /142.4.217.86/schedule/delete/?serviceId=1&day=1</a></li>
-            <li>Удаление кастомного рассписания сервиса <a href="http://help-api.vallverk.com/method/detail/id/51"> GET /142.4.217.86/schedule/delete/?current=yes&serviceId=1</a></li>
-            <li>Удаление кастомного рассписания сервиса за определенный день<a href="http://help-api.vallverk.com/method/detail/id/52"> GET /142.4.217.86/schedule/delete/?current=yes&serviceId=1&date=1</a></li>
+            <li>Вывод постояного расписания по сервису за неделю <a href="http://help-api.vallverk.com/method/detail/id/45"> GET /142.4.217.86/schedule/?serviceId=1</a></li>
+            <li>Вывод постояного расписания по сервису за 1 день<a href="http://help-api.vallverk.com/method/detail/id/46"> GET /142.4.217.86/schedule/?serviceId=1&day=1</a></li>
+            <li>Вывод кастомного расписания по сервису <a href="http://help-api.vallverk.com/method/detail/id/47"> GET /142.4.217.86/schedule/?current=yes&serviceId=1</a></li>
+            <li>Вывод кастомного расписания по сервису за определенный день<a href="http://help-api.vallverk.com/method/detail/id/48"> GET /142.4.217.86/schedule/?current=yes&serviceId=1&date=1</a></li>
+            <li>Удаление постояного расписания сервиса<a href="http://help-api.vallverk.com/method/detail/id/49"> GET /142.4.217.86/schedule/delete/?serviceId=1</a></li>
+            <li>Удаление постояного расписания сервиса по дню недели<a href="http://help-api.vallverk.com/method/detail/id/50"> GET /142.4.217.86/schedule/delete/?serviceId=1&day=1</a></li>
+            <li>Удаление кастомного расписания сервиса <a href="http://help-api.vallverk.com/method/detail/id/51"> GET /142.4.217.86/schedule/delete/?current=yes&serviceId=1</a></li>
+            <li>Удаление кастомного расписания сервиса за определенный день<a href="http://help-api.vallverk.com/method/detail/id/52"> GET /142.4.217.86/schedule/delete/?current=yes&serviceId=1&date=1</a></li>
         </ol>
     </li>
 </ul>
